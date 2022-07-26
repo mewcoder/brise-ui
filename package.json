@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "@vicons/ionicons5": "^0.12.0",
@@ -16,7 +19,18 @@
     "atoms-ui-vue": "workspace:*",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
+    "vitepress": "1.0.0-alpha.4",
     "vue": "^3.2.37",
     "vue-tsc": "^0.38.4"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "@types/react",
+        "react",
+        "react-dom"
+      ]
+    }
   }
 }
