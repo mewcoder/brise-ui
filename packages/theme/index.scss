@@ -1,0 +1,26 @@
+.a-btn {
+  @apply px-4 h-8 rounded cursor-pointer shadow border-1  border-transparent hover:bg-opacity-80;
+  @apply transition duration-150;
+}
+.a-btn + .a-btn {
+  @apply ml-2;
+}
+
+.a-btn-default {
+  @apply bg-white border border-gray-200 hover:bg-gray-200;
+}
+.a-btn-primary {
+  @apply bg-blue-500  text-white;
+}
+
+.a-btn-success {
+  @apply bg-green-500 text-white;
+}
+
+.a-btn-warning {
+  @apply bg-orange-500 text-white;
+}
+
+.a-btn-danger {
+  @apply bg-red-500 text-white;
+}

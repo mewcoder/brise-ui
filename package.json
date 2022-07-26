@@ -5,19 +5,22 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "docs:dev": "vitepress dev docs",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@unocss/transformer-directives": "^0.44.7",
     "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue": "^3.0.0",
     "atoms-ui-theme": "workspace:*",
     "atoms-ui-utils": "workspace:*",
     "atoms-ui-vue": "workspace:*",
+    "sass": "^1.54.0",
     "typescript": "^4.6.4",
+    "unocss": "^0.44.7",
     "vite": "^3.0.0",
     "vitepress": "1.0.0-alpha.4",
     "vue": "^3.2.37",
