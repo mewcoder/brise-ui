@@ -1,7 +1,6 @@
 import DefaultTheme from "vitepress/theme";
-// import "uno.css";
-import { installComponents } from "atoms-ui-vue/index";
-import "atoms-ui-theme/index";
+import { installComponents } from "atoms-ui-vue";
+import "atoms-ui-theme/style.css";
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {

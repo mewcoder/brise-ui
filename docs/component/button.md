@@ -1,14 +1,14 @@
 # Button
 
-## 使用图标
+## 使用按钮
 
-- 如果你想像用例一样直接使用，你需要全局注册组件，才能够直接在项目里使用。
-
-    <a-button>按钮</a-button>
-    <a-button type="primary">按钮</a-button>
-    <a-button type="success">按钮</a-button>
-    <a-button type="warning">按钮</a-button>
-    <a-button type="danger">按钮</a-button>
+  <div>   
+   <a-button>按钮</a-button>
+      <a-button type="primary">按钮</a-button>
+      <a-button type="success">按钮</a-button>
+      <a-button type="warning">按钮</a-button>
+      <a-button type="danger">按钮</a-button>
+      </div>
 
 ```vue
 <template>

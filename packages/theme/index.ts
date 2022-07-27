@@ -1,2 +1,2 @@
-// import 'uno.css'
+import 'uno.css'
 import "./index.scss";
