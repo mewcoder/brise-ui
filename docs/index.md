@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: atoms组件库
-  text: 基于 Vue 3 的组件库.
-  tagline: 掌握 vue3 组件编写
+  text: 基于 Vue 3 的组件库
+  tagline: ---
   actions:
     - theme: brand
       text: 快速开始

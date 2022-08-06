@@ -2,13 +2,14 @@ export default {
   title: "atoms-ui",
   description: "vue components",
   themeConfig: {
+    logo: '/atom.svg',
     lastUpdated: "最后更新时间",
     docsDir: "docs",
     editLinks: true,
     editLinkText: "编辑此网站",
     repo: "https://github.com/mewcoder",
     footer: {
-      message: "Released under the MIT License.",
+      message: "MIT License.",
       copyright: "Copyright © 2022-present atoms",
     },
     nav: [
