@@ -1,4 +1,3 @@
 # atoms-ui
-> vue3 + typecirpt + unocss + pnpm
 
-> 建议使用 xicons 作为图标库。
+基于 vue3 + unocss 的组件库
