@@ -19,13 +19,11 @@ export default defineConfig({
   ],
 
   build: {
+    outDir:resolve(__dirname, "packages/theme"),
+    // https://cn.vitejs.dev/guide/build.html#library-mode
     lib: {
       entry: resolve(__dirname, "packages/theme/index.ts"),
-
-      name: "index",
-      formats: ["es"],
-      // the proper extensions will be added
-      fileName: "theme",
+      formats: ["es"]
     },
   },
 });

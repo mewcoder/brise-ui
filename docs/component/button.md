@@ -1,14 +1,14 @@
 # Button
 
-## 使用按钮
+## 使用
 
-  <div>   
-   <a-button>按钮</a-button>
-      <a-button type="primary">按钮</a-button>
-      <a-button type="success">按钮</a-button>
-      <a-button type="warning">按钮</a-button>
-      <a-button type="danger">按钮</a-button>
-      </div>
+<div>   
+  <a-button>按钮</a-button>
+  <a-button type="primary">按钮</a-button>
+  <a-button type="success">按钮</a-button>
+  <a-button type="warning">按钮</a-button>
+  <a-button type="danger">按钮</a-button>
+</div>
 
 ```vue
 <template>
@@ -22,8 +22,8 @@
 
 ## API
 
-### Props
+### props
 
-| 名称  | 类型   | 默认值    | 说明     |
-| ----- | ------ | --------- | -------- |
-| color | string | undefined | 图标颜色 |
+| 名称 | 类型   | 可选值                                 | 默认值  | 说明     |
+| ---- | ------ | -------------------------------------- | ------- | -------- |
+| type | string | default/primary/success/warning/danger | default | 图标颜色 |
