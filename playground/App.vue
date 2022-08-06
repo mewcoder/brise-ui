@@ -1,15 +1,20 @@
 <script setup lang="ts">
-import { ArrowUpCircleSharp } from "@vicons/ionicons5";
+import { ArrowUpCircleSharp, AddCircle } from "@vicons/ionicons5";
 </script>
 
 <template>
-  <H1>atoms-vue</H1>
-  <!-- <a-icon color="green" size="10"> <ArrowUpCircleSharp/> </a-icon> -->
+  <h1>Storm Vue</h1>
+
+  <h3>button</h3>
   <a-button>按钮</a-button>
   <a-button type="primary">按钮</a-button>
   <a-button type="success">按钮</a-button>
   <a-button type="warning">按钮</a-button>
   <a-button type="danger">按钮</a-button>
+
+  <h3>icon</h3>
+  <a-icon size="16" color="red"> <ArrowUpCircleSharp /> </a-icon>
+  <a-icon size="16"> <AddCircle /> </a-icon>
 </template>
 
 <style scoped></style>

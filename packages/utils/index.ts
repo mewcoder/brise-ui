@@ -1,2 +1,1 @@
-export * from "./bem";
-export * from "./with-install";
+export * from "./sfc";

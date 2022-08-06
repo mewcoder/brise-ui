@@ -1,2 +1,3 @@
 import 'uno.css'
-import "./index.scss";
+import "./button.css";
+import './icon.css'

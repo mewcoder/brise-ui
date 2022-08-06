@@ -5,7 +5,7 @@ const Button = withInstall(_Button);
 
 export default Button;
 
-export * from "./src/button";
+export * from "./src/api";
 
 declare module "vue" {
   export interface GlobalComponents {

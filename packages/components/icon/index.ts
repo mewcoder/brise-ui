@@ -5,7 +5,7 @@ const Icon = withInstall(_Icon);
 
 export default Icon;
 
-export * from "./src/icon";
+export * from "./src/api";
 
 declare module "vue" {
   export interface GlobalComponents {

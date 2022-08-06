@@ -1,26 +1,26 @@
-.a-btn {
+.a-button {
   @apply px-4 h-8 rounded cursor-pointer shadow border-1  border-transparent hover:bg-opacity-80;
   @apply transition duration-150;
 }
-.a-btn + .a-btn {
+.a-button + .a-button {
   @apply ml-2;
 }
 
-.a-btn-default {
+.a-button--default {
   @apply bg-white border border-gray-200 hover:bg-gray-200;
 }
-.a-btn-primary {
+.a-button--primary {
   @apply bg-blue-500  text-white;
 }
 
-.a-btn-success {
+.a-button--success {
   @apply bg-green-500 text-white;
 }
 
-.a-btn-warning {
+.a-button--warning {
   @apply bg-orange-500 text-white;
 }
 
-.a-btn-danger {
+.a-button--danger {
   @apply bg-red-500 text-white;
 }

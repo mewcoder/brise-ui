@@ -1,6 +1,6 @@
+import type { App } from "vue";
 export * from "./icon";
 export * from "./button";
-import { App } from "vue";
 import Icon from "./icon";
 import Button from "./button";
 

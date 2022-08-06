@@ -1,15 +1,15 @@
-<script setup lang="ts">
-defineProps({
-  type: {
-    type: String,
-    default: "default",
-  },
-});
-</script>
-
 <template>
-  <button class="a-btn" :class="[`a-btn-${type}`]"><slot></slot></button>
+  <button :class="classList">
+    <slot></slot>
+  </button>
 </template>
+
+<script setup lang="ts">
+import { ref } from "vue";
+import { buttonProps } from "./api";
+const props = defineProps(buttonProps);
+const classList = ref(["a-button", `a-button--${props.type}`]);
+</script>
 
 <script lang="ts">
 export default {
