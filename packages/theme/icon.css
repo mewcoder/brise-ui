@@ -1,4 +1,4 @@
 .a-icon {
-  @apply  w-1.5rem inline-block text-dark-50 align-middle;
+  @apply  w-1.5rem inline-block text-gray-500 align-middle;
   @apply transition duration-150;
 }

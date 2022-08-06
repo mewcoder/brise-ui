@@ -1,6 +1,6 @@
 # Icon 图标
 
-推荐使用 xicons 作为图标库。
+推荐使用 [xicons](https://www.xicons.org/) 作为图标库。
 
 ```bash
 pnpm install @vicons/ionicons5
@@ -9,19 +9,19 @@ pnpm install @vicons/ionicons5
 ## 使用
 
 <script setup lang="ts">
-import { ArrowUpCircleSharp, AddCircle } from "@vicons/ionicons5";
+import { ArrowUpCircleSharp, AddCircleOutline } from "@vicons/ionicons5";
 </script>
 
 <a-icon size="20" color="red"> <ArrowUpCircleSharp /> </a-icon>
-<a-icon size="20"> <AddCircle /> </a-icon>
+<a-icon size="20"> <AddCircleOutline /> </a-icon>
 
 ```vue
 <template>
   <a-icon size="20" color="red"> <ArrowUpCircleSharp /> </a-icon>
-  <a-icon size="20"> <AddCircle /> </a-icon>
+  <a-icon size="20"> <AddCircleOutline /> </a-icon>
 </template>
 <script setup lang="ts">
-import { ArrowUpCircleSharp, AddCircle } from "@vicons/ionicons5";
+import { ArrowUpCircleSharp, AddCircleOutline } from "@vicons/ionicons5";
 </script>
 ```
 

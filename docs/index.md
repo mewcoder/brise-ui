@@ -2,19 +2,21 @@
 layout: home
 
 hero:
-  name: atoms组件库
-  text: 基于 Vue 3 的组件库
-  tagline: ---
+  name: Atoms UI
+  text: Vue3 组件库
+  tagline: with unocss
   actions:
     - theme: brand
       text: 快速开始
       link: /guide/quieStart
-
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/mewcoder/atoms-ui
 features:
-  - icon: 🛠️
-    title: 组件库构建流程
-    details: Vue3 组件库构建...
-  - icon: ⚙️
-    title: 组件库单元测试
-    details: Vue3 组件库测试...
+  - icon: 🚀
+    title: 基于 vue3+typescript
+    details: 现代化开发方案
+  - icon: ✨
+    title: 基于 unocss
+    details: 原子化CSS方案
 ---

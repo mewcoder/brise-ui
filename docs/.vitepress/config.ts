@@ -1,20 +1,18 @@
 export default {
-  title: "atoms-ui",
-  description: "vue components",
+  title: "Atoms",
+  description: "vue3 components",
   themeConfig: {
-    logo: '/atom.svg',
-    lastUpdated: "最后更新时间",
+    logo: "/atom.svg",
+    siteTitle: false,
     docsDir: "docs",
-    editLinks: true,
-    editLinkText: "编辑此网站",
-    repo: "https://github.com/mewcoder",
+    outlineTitle: '在本页面',
+    repo: "https://github.com/mewcoder/atoms-ui",
     footer: {
-      message: "MIT License.",
-      copyright: "Copyright © 2022-present atoms",
+      copyright: 'Copyright © 2022 mewcoder'
     },
     nav: [
       { text: "指南", link: "/guide/installation", activeMatch: "/guide/" },
-      { text: "组件", link: "/component/icon", activeMatch: "/component/" },
+      { text: "组件", link: "/component/button", activeMatch: "/component/" },
     ],
     sidebar: {
       "/guide/": [
@@ -28,7 +26,7 @@ export default {
       ],
       "/component/": [
         {
-          text: "基础组件",
+          text: "组件",
           items: [
             { text: "Button 按钮", link: "/component/button" },
             { text: "Icon 图标", link: "/component/icon" },
@@ -36,5 +34,8 @@ export default {
         },
       ],
     },
+    socialLinks: [
+      { icon: "github", link: "https://github.com/mewcoder/atoms-ui" },
+    ],
   },
 };
