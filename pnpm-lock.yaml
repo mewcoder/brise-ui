@@ -8,9 +8,9 @@ importers:
       '@unocss/transformer-directives': ^0.44.7
       '@vicons/ionicons5': ^0.12.0
       '@vitejs/plugin-vue': ^3.0.1
-      atoms-ui-theme: workspace:0.0.1
-      atoms-ui-utils: workspace:0.0.1
-      atoms-ui-vue: workspace:0.0.1
+      atoms-ui-theme: workspace:*
+      atoms-ui-utils: workspace:*
+      atoms-ui-vue: workspace:*
       typescript: ^4.7.4
       unocss: ^0.44.7
       vite: ^3.0.4
