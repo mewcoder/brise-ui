@@ -1,0 +1,12 @@
+.a-input {
+  @apply px-2 h-8 rounded shadow  border-1  inline-block;
+  @apply transition duration-150;
+}
+
+.a-input--disabled {
+  @apply disabled:opacity-50 bg-gray-50;
+}
+
+.a-input + .a-input {
+  @apply ml-2;
+}

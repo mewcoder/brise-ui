@@ -2,3 +2,6 @@
   @apply  w-1.5rem inline-block text-gray-500 align-middle;
   @apply transition duration-150;
 }
+.a-icon + .a-icon {
+  @apply ml-2;
+}

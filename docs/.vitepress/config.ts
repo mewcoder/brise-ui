@@ -5,14 +5,14 @@ export default {
     logo: "/atom.svg",
     siteTitle: false,
     docsDir: "docs",
-    outlineTitle: '在本页面',
+    outlineTitle: '#',
     repo: "https://github.com/mewcoder/atoms-ui",
     footer: {
       copyright: 'Copyright © 2022 mewcoder'
     },
     nav: [
       { text: "指南", link: "/guide/installation", activeMatch: "/guide/" },
-      { text: "组件", link: "/component/button", activeMatch: "/component/" },
+      { text: "组件", link: "/component/icon", activeMatch: "/component/" },
     ],
     sidebar: {
       "/guide/": [
@@ -28,8 +28,9 @@ export default {
         {
           text: "组件",
           items: [
-            { text: "Button 按钮", link: "/component/button" },
             { text: "Icon 图标", link: "/component/icon" },
+            { text: "Button 按钮", link: "/component/button" },
+            { text: "Input 输入框", link: "/component/input" },
           ],
         },
       ],
