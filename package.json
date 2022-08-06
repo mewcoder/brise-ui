@@ -13,19 +13,19 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "@types/node": "^18.6.1",
+    "@types/node": "^18.6.4",
     "@unocss/transformer-directives": "^0.44.7",
     "@vicons/ionicons5": "^0.12.0",
-    "@vitejs/plugin-vue": "^3.0.0",
+    "@vitejs/plugin-vue": "^3.0.1",
     "atoms-ui-theme": "workspace:*",
     "atoms-ui-utils": "workspace:*",
     "atoms-ui-vue": "workspace:*",
-    "typescript": "^4.6.4",
+    "typescript": "^4.7.4",
     "unocss": "^0.44.7",
-    "vite": "^3.0.0",
+    "vite": "^3.0.4",
     "vitepress": "1.0.0-alpha.4",
     "vue": "^3.2.37",
-    "vue-tsc": "^0.38.4"
+    "vue-tsc": "^0.38.9"
   },
   "pnpm": {
     "peerDependencyRules": {
