@@ -8,15 +8,20 @@ importers:
       '@unocss/transformer-directives': ^0.44.7
       '@vicons/ionicons5': ^0.12.0
       '@vitejs/plugin-vue': ^3.0.1
+      async-validator: ^4.2.5
       atoms-ui-theme: workspace:*
       atoms-ui-utils: workspace:*
       atoms-ui-vue: workspace:*
+      tiny-emitter: ^2.1.0
       typescript: ^4.7.4
       unocss: ^0.44.7
       vite: ^3.0.4
       vitepress: 1.0.0-alpha.4
       vue: ^3.2.37
       vue-tsc: ^0.38.9
+    dependencies:
+      async-validator: 4.2.5
+      tiny-emitter: 2.1.0
     devDependencies:
       '@types/node': 18.6.4
       '@unocss/transformer-directives': 0.44.7
@@ -677,6 +682,10 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
     dev: true
+
+  /async-validator/4.2.5:
+    resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
+    dev: false
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -1373,6 +1382,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /tiny-emitter/2.1.0:
+    resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
+    dev: false
 
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}

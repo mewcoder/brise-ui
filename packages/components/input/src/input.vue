@@ -13,20 +13,22 @@
 import { ref } from "vue";
 import { inputProps } from "./api";
 const props = defineProps(inputProps);
+
 const classList = ref(["a-input"]);
 if (props.disabled) {
   classList.value.push("a-input--disabled");
 }
 const emit = defineEmits(["update:modelValue"]);
 
+const isComposing = ref(false);
+
 const handleInput = (e: Event) => {
   if (isComposing.value) return;
   let { value } = e.target as HTMLInputElement;
-  console.log(value);
   emit("update:modelValue", value);
 };
 
-const isComposing = ref(false);
+
 const handleCompositionStart = () => {
   isComposing.value = true;
 };

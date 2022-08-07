@@ -35,5 +35,9 @@
         "react-dom"
       ]
     }
+  },
+  "dependencies": {
+    "async-validator": "^4.2.5",
+    "tiny-emitter": "^2.1.0"
   }
 }
