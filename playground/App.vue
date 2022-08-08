@@ -1,7 +1,15 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 import { ArrowUpCircleSharp, AddCircle } from "@vicons/ionicons5";
 const str = ref("11111111111");
+const formData = reactive({
+  name: "",
+  age: "",
+});
+
+const rules = {
+  name: [{ required: true, message: "请输入", trigger: "blur" }],
+};
 </script>
 
 <template>
@@ -22,6 +30,16 @@ const str = ref("11111111111");
   <a-input v-model="str" class="w-200px" />
   <a-input v-model="str" disabled class="w-200px" />
   <div>input:{{ str }}</div>
+
+  <h3>form</h3>
+  <a-form :model="formData" :rules="rules">
+    <a-form-item label="姓名" prop="name">
+      <a-input v-model="formData.name" class="w-200px" />
+    </a-form-item>
+    <a-form-item label="年龄" prop="age">
+      <a-input v-model="formData.age" class="w-200px" />
+    </a-form-item>
+  </a-form>
 </template>
 
 <style scoped></style>

@@ -4,45 +4,36 @@
   </form>
 </template>
 <script setup lang="ts">
-import { reactive, provide, ref } from "vue";
+import { reactive, provide, ref, toRefs } from "vue";
 import { formProps } from "./api";
-import { eventBus } from "atoms-ui-utils";
 const props = defineProps(formProps);
 
-const fields = ref<string[]>([]);
+const fields = ref<any[]>([]);
 
-eventBus.$on("on-form-item-add", (field: string) => {
+const addField = (field: any) => {
   if (field) {
     fields.value.push(field);
   }
-});
+};
 
-eventBus.$on("on-form-removeField", (field: string) => {
+const removeField = (field: any) => {
   if (field.prop) {
     fields.value.splice(fields.value.indexOf(field), 1);
   }
-});
+};
 
-provide(
-  "form",
-  reactive({
-    resetField,
-    validate,
-  })
-);
-
-const resetField = () => {
+const resetFields = () => {
   fields.value.forEach((field) => {
     field.resetField();
   });
 };
-// 公开方法：全部校验数据，支持 Promise
-const validate = (callback) => {
+// 校验
+const validate = (callback: any) => {
   return new Promise((resolve) => {
     let valid = true;
     let count = 0;
-    fields.value.forEach((field) => {
-      field.validate("", (errors) => {
+    fields.value.forEach((field: any) => {
+      field.validate("", (errors: any) => {
         if (errors) {
           valid = false;
         }
@@ -57,6 +48,17 @@ const validate = (callback) => {
     });
   });
 };
+
+provide(
+  "form",
+  reactive({
+    ...toRefs(props),
+    addField,
+    removeField,
+    resetFields,
+    validate,
+  })
+);
 </script>
 
 <script lang="ts">
