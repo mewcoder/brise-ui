@@ -1,5 +1,5 @@
 .a-input {
-  @apply inline-block h-8 px-2  rounded shadow  border-1  border-gray-400 text-gray-600;
+  @apply inline-block h-8 px-2  rounded shadow  border-1  border-gray-400;
   @apply outline-none hover:border-gray-400 focus:border-blue-500;
   @apply transition duration-150;
 }
