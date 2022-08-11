@@ -5,7 +5,7 @@ hero:
   name: Atoms UI
   text: Vue3 组件库
   tagline: with unocss
- image:
+  image:
     src: /atom.svg
     alt: Atoms
   actions:
