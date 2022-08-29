@@ -1,5 +1,5 @@
 <template>
-  <div class="a-rate">
+  <div class="a-rate" :class="{ 'a-rate--disabled': disabled }">
     <span
       v-for="(item, index) in 5"
       :key="index"
@@ -19,20 +19,25 @@ import { ref } from "vue";
 import { rateProps } from "./types";
 
 const props = defineProps(rateProps);
-const emit = defineEmits(["update:modelValue"]);
+const emit = defineEmits(["update:modelValue", "change"]);
 
 let currentValue = ref(props.modelValue);
 
 const setCurrentValue = (val: number) => {
+  if (props.disabled) return;
   currentValue.value = val;
 };
 
 const resetCurrentValue = () => {
+  if (props.disabled) return;
   currentValue.value = props.modelValue;
 };
 
 const selectValue = (val: number) => {
+  if (props.disabled) return;
+  console.log("1");
   emit("update:modelValue", val);
+  emit("change", val);
 };
 </script>
 

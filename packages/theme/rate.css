@@ -1,7 +1,9 @@
 .a-rate {
   @apply cursor-pointer  text-2xl;
 }
-
+.a-rate--disabled {
+  @apply cursor-not-allowed;
+}
 .a-rate__item--on {
   @apply text-yellow-400;
 }
