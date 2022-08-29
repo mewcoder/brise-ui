@@ -3,6 +3,7 @@ import { ref, reactive } from "vue";
 import { ArrowUpCircleSharp, AddCircle } from "@vicons/ionicons5";
 const str = ref("11111111111");
 const rate = ref(2);
+const modal = ref(false);
 const formData = reactive({
   name: "",
   age: "",
@@ -10,6 +11,10 @@ const formData = reactive({
 
 const rules = {
   name: [{ required: true, message: "请输入", trigger: "blur" }],
+};
+
+const handleOpen = () => {
+  modal.value = true;
 };
 </script>
 
@@ -32,10 +37,15 @@ const rules = {
   <a-input v-model="str" placeholder="禁用状态" disabled />
   <div>val:{{ str }}</div>
   <hr />
-  
+
   <h3>rate</h3>
-  <a-rate v-model="rate" disabled />
+  <a-rate v-model="rate" />
   <div>rate:{{ rate }}</div>
+  <hr />
+
+  <h3>modal</h3>
+  <a-button @click="handleOpen">弹窗</a-button>
+  <a-modal v-model="modal" />
   <hr />
 
   <h3>form</h3>

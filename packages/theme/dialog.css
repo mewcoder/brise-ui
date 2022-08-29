@@ -1,0 +1,8 @@
+.a-dialog__wrapper {
+  @apply fixed top-0 right-0 bottom-0 left-0 overflow-auto;
+  @apply bg-dark-50 bg-opacity-25;
+}
+
+.a-dialog {
+  @apply bg-white h-96 mx-auto;
+}

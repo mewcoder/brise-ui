@@ -32,6 +32,7 @@ export default {
             { text: "Icon 图标", link: "/component/icon" },
             { text: "Button 按钮", link: "/component/button" },
             { text: "Input 输入框", link: "/component/input" },
+            { text: "Rate 评分", link: "/component/rate" },
           ],
         },
       ],

@@ -5,32 +5,32 @@
 ### 基础使用
 
 
-<a-input v-model="input" placeholder="请输入" />
+<a-input v-model="inputVal" placeholder="请输入" />
 
 ```vue
 <template>
-  <a-input v-model="input" placeholder="请输入" />
+  <a-input v-model="inputVal" placeholder="请输入" />
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const input = ref("");
+const inputVal = ref("");
 </script>
 ```
 
 ### 禁用状态
 
 
-<a-input v-model="input" placeholder="请输入" disabled   />
+<a-input v-model="inputVal" placeholder="请输入" disabled   />
 
 ```vue
 <template>
-  <a-input v-model="input" placeholder="请输入" disabled />
+  <a-input v-model="inputVal" placeholder="请输入" disabled />
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const input = ref("");
+const inputVal = ref("");
 </script>
 ```
 

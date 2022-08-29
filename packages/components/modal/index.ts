@@ -1,14 +1,14 @@
-import _Rate from "./src/rate.vue";
+import _Modal from "./src/modal.vue";
 import { withInstall } from "atoms-ui-utils";
 
-const Rate = withInstall(_Rate);
+const Modal = withInstall(_Modal);
 
-export default Rate;
+export default Modal;
 
 export * from "./src/types";
 
 declare module "vue" {
   export interface GlobalComponents {
-    ARate: typeof Rate;
+    AModal: typeof Modal;
   }
 }

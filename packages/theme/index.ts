@@ -3,3 +3,4 @@ import "./button.css";
 import './icon.css'
 import './input.css'
 import './rate.css'
+import './dialog.css'

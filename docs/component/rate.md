@@ -8,12 +8,12 @@
 
 ```vue
 <template>
-  <a-rate v-model="rate" />
+  <a-rate v-model="rateVal" />
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const input = ref(0);
+const rateVal = ref(0);
 </script>
 ```
 
