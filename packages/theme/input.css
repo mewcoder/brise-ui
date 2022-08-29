@@ -1,11 +1,12 @@
 .a-input {
-  @apply inline-block h-8 px-2  rounded shadow  border-1  border-gray-400;
-  @apply outline-none hover:border-gray-400 focus:border-blue-500;
+  @apply inline-block h-8 px-2  rounded shadow outline-none border-1  border-gray-300;
+  @apply hover:border-gray-400 focus:border-blue-500 focus:ring-2;
   @apply transition duration-150;
 }
 
 .a-input--disabled {
-  @apply disabled:opacity-50 bg-gray-200;
+  @apply bg-gray-100 cursor-not-allowed;
+  @apply hover:border-gray-300;
 }
 
 .a-input + .a-input {

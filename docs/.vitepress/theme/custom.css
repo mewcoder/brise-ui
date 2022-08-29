@@ -7,3 +7,6 @@
   --vp-button-brand-active-border: #3b82f6;
   --vp-custom-block-tip-text: #3b82f6;
 }
+.vp-doc h3 {
+  margin-bottom: 16px;
+}

@@ -1,0 +1,11 @@
+.a-rate {
+  @apply cursor-pointer  text-2xl;
+}
+
+.a-rate__item--on {
+  @apply text-yellow-400;
+}
+
+.a-rate__item--off {
+  @apply text-gray-200;
+}

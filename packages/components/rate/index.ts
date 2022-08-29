@@ -1,14 +1,14 @@
-import _Input from "./src/input.vue";
+import _Rate from "./src/rate.vue";
 import { withInstall } from "atoms-ui-utils";
 
-const Input = withInstall(_Input);
+const Rate = withInstall(_Rate);
 
-export default Input;
+export default Rate;
 
 export * from "./src/types";
 
 declare module "vue" {
   export interface GlobalComponents {
-    AInput: typeof Input;
+    AIRate: typeof Rate;
   }
 }

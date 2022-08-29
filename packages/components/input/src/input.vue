@@ -1,44 +1,61 @@
 <template>
   <input
-    :class="classList"
+    :class="inputClass"
     :disabled="disabled"
     :value="modelValue"
+    :placeholder="placeholder"
     @input="handleInput"
     @blur="handleBlur"
+    @focus="handleFocus"
+    @change="handleChange"
     @compositionstart="handleCompositionStart"
     @compositionend="handleCompositionEnd"
   />
 </template>
 
 <script setup lang="ts">
-import { ref, inject } from "vue";
-import { inputProps } from "./api";
+import { ref, computed, inject } from "vue";
+import { inputProps } from "./types";
+
 const props = defineProps(inputProps);
+
+const emit = defineEmits(["update:modelValue", "blur", "focus", "change"]);
 
 const formItem: any = inject("form-item");
 
-const classList = ref(["a-input"]);
-if (props.disabled) {
-  classList.value.push("a-input--disabled");
-}
-const emit = defineEmits(["update:modelValue", "blur"]);
+const inputClass = computed(() => ({
+  "a-input": true,
+  "a-input--disabled": props.disabled,
+}));
 
 const isComposing = ref(false);
 
+// handlers
 const handleInput = (e: Event) => {
   if (isComposing.value) return;
   let { value } = e.target as HTMLInputElement;
   emit("update:modelValue", value);
 };
 
-const handleBlur = (event: FocusEvent) => {
-  emit("blur", event);
+const handleChange = (e: Event) => {
+  emit("change", e);
+  formItem?.validate?.("change");
+};
+
+const handleFocus = (e: FocusEvent) => {
+  emit("focus", e);
+};
+
+const handleBlur = (e: FocusEvent) => {
+  emit("blur", e);
   formItem?.validate?.("blur");
 };
+
 const handleCompositionStart = () => {
   isComposing.value = true;
 };
-const handleCompositionEnd = (e: Event) => {
+
+const handleCompositionEnd = (e: CompositionEvent) => {
   if (isComposing.value) {
     isComposing.value = false;
     handleInput(e);
@@ -48,6 +65,7 @@ const handleCompositionEnd = (e: Event) => {
 
 <script lang="ts">
 export default {
-  name: "a-input",
+  name: "AInput",
+  inheritAttrs: false,
 };
 </script>

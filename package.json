@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "docs:dev": "vite build && vitepress dev docs",
+    "docs": "vite build && vitepress dev docs",
     "build:theme": "vite build",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
@@ -24,9 +24,9 @@
     "atoms-ui-utils": "workspace:*",
     "atoms-ui-vue": "workspace:*",
     "typescript": "^4.7.4",
-    "unocss": "^0.44.7",
+    "unocss": "^0.45.13",
     "vite": "^3.0.4",
-    "vitepress": "1.0.0-alpha.4",
+    "vitepress": "1.0.0-alpha.12",
     "vue": "^3.2.37",
     "vue-tsc": "^0.38.9"
   },

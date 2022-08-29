@@ -2,6 +2,7 @@
 import { ref, reactive } from "vue";
 import { ArrowUpCircleSharp, AddCircle } from "@vicons/ionicons5";
 const str = ref("11111111111");
+const rate = ref(0);
 const formData = reactive({
   name: "",
   age: "",
@@ -27,17 +28,21 @@ const rules = {
   <a-icon size="16"> <AddCircle /> </a-icon> -->
 
   <h3>input</h3>
-  <a-input v-model="str" class="w-200px" />
-  <a-input v-model="str" disabled class="w-200px" />
-  <div>input:{{ str }}</div>
-
+  <a-input v-model="str" />
+  <a-input v-model="str" placeholder="禁用状态" disabled />
+  <div>val:{{ str }}</div>
+  <hr />
+  <h3>rate</h3>
+  <a-rate v-model="rate" />
+  <div>rate:{{ rate }}</div>
+  <hr />
   <h3>form</h3>
   <a-form :model="formData" :rules="rules">
     <a-form-item label="姓名" prop="name">
-      <a-input v-model="formData.name" class="w-200px" />
+      <a-input v-model="formData.name" />
     </a-form-item>
     <a-form-item label="年龄" prop="age">
-      <a-input v-model="formData.age" class="w-200px" />
+      <a-input v-model="formData.age" />
     </a-form-item>
   </a-form>
 </template>
