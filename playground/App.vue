@@ -65,6 +65,11 @@ const handleOpen = () => {
   <h3>switch</h3>
   <a-switch v-model="switchVal"></a-switch>
   <div>switchVal：{{ switchVal }}</div>
+  <hr />
+
+  <h3>radio</h3>
+  <a-radio v-model="switchVal" ></a-radio>
+  <div>switchVal：{{ switchVal }}</div>
 </template>
 
 <style scoped></style>
