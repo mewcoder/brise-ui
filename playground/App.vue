@@ -45,18 +45,23 @@ const handleOpen = () => {
 
   <h3>modal</h3>
   <a-button @click="handleOpen">弹窗</a-button>
-  <a-modal v-model="modal" />
+  <a-modal v-model="modal" title="模态框">
+    <a-form :model="formData" :rules="rules">
+      <a-form-item label="姓名" prop="name">
+        <a-input v-model="formData.name" />
+      </a-form-item>
+      <a-form-item label="年龄" prop="age">
+        <a-input v-model="formData.age" />
+      </a-form-item>
+    </a-form>
+    <template #footer>
+      <a-button type="primary">按钮</a-button>
+      <a-button>按钮</a-button>
+    </template>
+  </a-modal>
   <hr />
 
   <h3>form</h3>
-  <a-form :model="formData" :rules="rules">
-    <a-form-item label="姓名" prop="name">
-      <a-input v-model="formData.name" />
-    </a-form-item>
-    <a-form-item label="年龄" prop="age">
-      <a-input v-model="formData.age" />
-    </a-form-item>
-  </a-form>
 </template>
 
 <style scoped></style>

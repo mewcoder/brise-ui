@@ -4,5 +4,27 @@
 }
 
 .a-dialog {
-  @apply bg-white h-96 mx-auto;
+  @apply bg-white mx-auto;
+}
+
+.a-dialog__header {
+  @apply relative  p-20px;
+}
+
+.a-dialog__title {
+  @apply text-size-16px;
+}
+
+.a-dialog__close {
+  @apply absolute top-20px right-20px;
+  @apply bg-transparent border-transparent cursor-pointer;
+  @apply text-size-16px;
+}
+
+.a-dialog__body {
+  @apply p-20px;
+}
+
+.a-dialog__footer {
+  @apply p-20px text-right;
 }
