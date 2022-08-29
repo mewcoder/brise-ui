@@ -7,8 +7,9 @@ import Input from "./input";
 import Form from "./form";
 import Rate from "./rate";
 import Modal from "./modal";
+import Switch from "./switch";
 
-const plugins = [Icon, Button, Input, Rate, Modal, ...Form];
+const plugins = [Icon, Button, Input, Rate, Modal, Switch, ...Form];
 
 export function installComponents(app: App) {
   plugins.forEach((plugin) => app.use(plugin));

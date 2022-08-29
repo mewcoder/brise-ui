@@ -8,6 +8,7 @@ const formData = reactive({
   name: "",
   age: "",
 });
+const switchVal = ref(false);
 
 const rules = {
   name: [{ required: true, message: "请输入", trigger: "blur" }],
@@ -35,12 +36,12 @@ const handleOpen = () => {
   <h3>input</h3>
   <a-input v-model="str" />
   <a-input v-model="str" placeholder="禁用状态" disabled />
-  <div>val:{{ str }}</div>
+  <div>val：{{ str }}</div>
   <hr />
 
   <h3>rate</h3>
   <a-rate v-model="rate" />
-  <div>rate:{{ rate }}</div>
+  <div>rate：{{ rate }}</div>
   <hr />
 
   <h3>modal</h3>
@@ -61,7 +62,9 @@ const handleOpen = () => {
   </a-modal>
   <hr />
 
-  <h3>form</h3>
+  <h3>switch</h3>
+  <a-switch v-model="switchVal"></a-switch>
+  <div>switchVal：{{ switchVal }}</div>
 </template>
 
 <style scoped></style>

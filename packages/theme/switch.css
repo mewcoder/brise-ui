@@ -1,0 +1,25 @@
+.a-switch {
+  @apply relative;
+  
+}
+
+.a-switch__input {
+  @apply absolute w-0 h-0 opacity-0 m-0;
+}
+
+.a-switch__core {
+  @apply relative inline-block w-12 h-6 bg-light-900 rounded-xl;
+  @apply cursor-pointer shadow;
+}
+.a-switch__button {
+  @apply absolute top-0 left-0;
+  @apply transition duration-150;
+  @apply w-6 h-6 bg-white rounded-1/2 shadow;
+}
+
+.a-switch.is-checked .a-switch__core {
+  @apply bg-blue-500;
+}
+.a-switch.is-checked .a-switch__button {
+  @apply translate-x-6;
+}
