@@ -9,8 +9,19 @@ import Rate from "./rate";
 import Modal from "./modal";
 import Switch from "./switch";
 import Radio from "./radio";
+import Checkbox from "./checkbox";
 
-const plugins = [Icon, Button, Input, Rate, Modal, Switch, Radio, ...Form];
+const plugins = [
+  Icon,
+  Button,
+  Input,
+  Rate,
+  Modal,
+  Switch,
+  Radio,
+  Checkbox,
+  ...Form,
+];
 
 export function installComponents(app: App) {
   plugins.forEach((plugin) => app.use(plugin));

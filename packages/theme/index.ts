@@ -6,3 +6,4 @@ import "./rate.css";
 import "./dialog.css";
 import "./switch.css";
 import "./radio.css";
+import './checkbox.css'

@@ -10,6 +10,8 @@ const switchVal = ref(false);
 
 const radioVal = ref("1");
 
+const checkboxVal = ref([]);
+
 const formData = reactive({
   name: "",
   age: "",
@@ -83,7 +85,14 @@ const handleOpen = () => {
     <a-radio label="1">1</a-radio>
     <a-radio label="2">2</a-radio>
   </a-radio-group>
-
   <div>radioVal：{{ radioVal }}</div>
+  <hr />
 
+  <h3>checkbox</h3>
+  <a-checkbox-group v-model="checkboxVal">
+    <a-checkbox label="1">1</a-checkbox>
+    <a-checkbox label="2">2</a-checkbox>
+  </a-checkbox-group>
+  <div>checkboxVal{{ checkboxVal }}</div>
+  <hr />
 </template>

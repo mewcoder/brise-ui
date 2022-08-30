@@ -24,7 +24,7 @@
 <template>
   <a-button type="primary" @click="handleOpen">打开弹窗</a-button>
   <a-modal v-model="modal" title="模态框">
-    <a-form :model="formData" :rules="rules">
+    <a-form :model="formData">
       <a-form-item label="姓名" prop="name">
         <a-input v-model="formData.name" />
       </a-form-item>
