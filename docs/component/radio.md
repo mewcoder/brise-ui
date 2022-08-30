@@ -1,10 +1,10 @@
-# Rate 评分
+# Radio 单选框 
 
 ## 用法
 
 ### 基础使用
 
-<a-rate v-model="rateVal" />
+<a-rate v-model="rate" />
 
 ```vue
 <template>
@@ -13,14 +13,9 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const rateVal = ref(2);
+const rateVal = ref(0);
 </script>
 ```
-
-<script lang="ts" setup>
-import { ref } from "vue";
-const rateVal = ref(2);
-</script>
 
 ## API
 

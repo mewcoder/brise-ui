@@ -45,7 +45,7 @@ const handleOpen = () => {
   <hr />
 
   <h3>modal</h3>
-  <a-button @click="handleOpen">弹窗</a-button>
+  <a-button type="primary" @click="handleOpen">打开弹窗</a-button>
   <a-modal v-model="modal" title="模态框">
     <a-form :model="formData" :rules="rules">
       <a-form-item label="姓名" prop="name">
@@ -68,7 +68,7 @@ const handleOpen = () => {
   <hr />
 
   <h3>radio</h3>
-  <a-radio v-model="switchVal" ></a-radio>
+  <a-radio v-model="switchVal"></a-radio>
   <div>switchVal：{{ switchVal }}</div>
 </template>
 

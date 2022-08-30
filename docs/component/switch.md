@@ -1,26 +1,25 @@
-# Rate 评分
+# Switch 开关
 
 ## 用法
 
 ### 基础使用
 
-<a-rate v-model="rateVal" />
+<a-switch v-model="swtichVal" />
+
+<script lang="ts" setup>
+import { ref } from "vue";
+const swtichVal = ref(false);
+</script>
 
 ```vue
 <template>
-  <a-rate v-model="rateVal" />
+  <a-switch v-model="swtichVal" />
 </template>
-
 <script lang="ts" setup>
 import { ref } from "vue";
-const rateVal = ref(2);
+const swtichVal = ref(false);
 </script>
 ```
-
-<script lang="ts" setup>
-import { ref } from "vue";
-const rateVal = ref(2);
-</script>
 
 ## API
 
