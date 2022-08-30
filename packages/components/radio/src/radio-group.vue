@@ -5,16 +5,17 @@
 </template>
 
 <script setup lang="ts">
-import { provide } from "vue";
+import { provide, toRefs, reactive } from "vue";
 import { RadioGroupProps } from "./types";
-
+import { radioGroupProps } from "./types";
+const props = defineProps(radioGroupProps);
 const emit = defineEmits(["update:modelValue"]);
 
 const handleChange = (value: RadioGroupProps["modelValue"]) => {
   emit("update:modelValue", value);
 };
 
-provide("radio-group", { handleChange });
+provide("radioGroup", reactive({ handleChange, ...toRefs(props) }));
 </script>
 
 <script lang="ts">

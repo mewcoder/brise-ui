@@ -3,8 +3,9 @@ import _RadioGroup from "./src/radio-group.vue";
 import { withInstall } from "atoms-ui-utils";
 
 const Radio = withInstall(_Radio, {
-  _RadioGroup,
+   _RadioGroup,
 });
+
 
 export default Radio;
 export * from "./src/types";

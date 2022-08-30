@@ -19,7 +19,8 @@ import { radioProps, RadioProps } from "./types";
 
 const props = defineProps(radioProps);
 const radioRef = ref<HTMLInputElement>();
-const radioGroup = inject("radio-group", undefined);
+
+const radioGroup: any = inject("radioGroup", undefined);
 
 const modelValue = computed<RadioProps["label"]>({
   get() {

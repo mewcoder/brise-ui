@@ -1,21 +1,27 @@
-# Radio 单选框 
+# Radio 单选框
 
 ## 用法
 
 ### 基础使用
 
-<a-rate v-model="rate" />
+  <a-radio-group v-model="radioVal">
+    <a-radio label="1">1</a-radio>
+    <a-radio label="2">2</a-radio>
+  </a-radio-group>
 
 ```vue
 <template>
-  <a-rate v-model="rateVal" />
+  <a-radio-group v-model="radioVal">
+    <a-radio label="1">1</a-radio>
+    <a-radio label="2">2</a-radio>
+  </a-radio-group>
 </template>
+```
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const rateVal = ref(0);
+const radioVal = ref('1');
 </script>
-```
 
 ## API
 

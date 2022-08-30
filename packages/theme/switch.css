@@ -14,7 +14,7 @@
 .a-switch__button {
   @apply absolute top-0 left-0;
   @apply transition duration-150;
-  @apply w-6 h-6 bg-white rounded-1/2 shadow;
+  @apply w-6 h-6 bg-white rounded-1/2 shadow-xl;
 }
 
 .a-switch.is-checked .a-switch__core {
