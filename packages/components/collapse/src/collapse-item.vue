@@ -3,7 +3,7 @@
     <div class="a-collapse-item__header" @click="handleHeaderClick">
       {{ title }}
     </div>
-    <transition>
+    <transition >
       <div v-show="isActive" :id="name" class="a-collapse-item__content">
         <slot /></div
     ></transition>

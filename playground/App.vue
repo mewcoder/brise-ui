@@ -14,6 +14,45 @@ const checkboxVal = ref([]);
 
 const collapseVal = ref(["1"]);
 
+const treeVal = reactive([
+  {
+    title: "parent 1",
+    expand: true,
+    checked: false,
+    children: [
+      {
+        title: "parent 1-1",
+        expand: true,
+        checked: false,
+        children: [
+          {
+            title: "leaf 1-1-1",
+            checked: false,
+          },
+          {
+            title: "leaf 1-1-2",
+            checked: false,
+          },
+        ],
+      },
+      {
+        title: "parent 1-2",
+        checked: false,
+        children: [
+          {
+            title: "leaf 1-2-1",
+            checked: false,
+          },
+          {
+            title: "leaf 1-2-1",
+            checked: false,
+          },
+        ],
+      },
+    ],
+  },
+]);
+
 const formData = reactive({
   name: "",
   age: "",
@@ -117,5 +156,9 @@ const handleOpen = () => {
     </a-collapse-item>
   </a-collapse>
   <div>collapseVal：{{ collapseVal }}</div>
+  <hr />
+
+  <h3>tree</h3>
+  <a-tree :data="treeVal" show-checkbox></a-tree>
   <hr />
 </template>

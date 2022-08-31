@@ -11,6 +11,7 @@ import Switch from "./switch";
 import Radio from "./radio";
 import Checkbox from "./checkbox";
 import Collapse from "./collapse";
+import Tree from "./tree";
 
 const plugins = [
   Icon,
@@ -22,6 +23,7 @@ const plugins = [
   Radio,
   Checkbox,
   Collapse,
+  Tree,
   ...Form,
 ];
 

@@ -6,5 +6,6 @@ import "./rate.css";
 import "./dialog.css";
 import "./switch.css";
 import "./radio.css";
-import './checkbox.css'
-import './collapse.css'
+import "./checkbox.css";
+import "./collapse.css";
+import "./tree.css";

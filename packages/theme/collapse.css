@@ -1,7 +1,9 @@
 .a-collapse-item {
-  @apply border-t-1 border-t-1  border-gray-300;
+  @apply border-b-1  border-gray-300;
 }
-
+.a-collapse {
+  @apply border-t-1   border-gray-300;
+}
 .a-collapse-item__header {
   @apply bg-gray-200 text-base p-2;
   @apply cursor-pointer;
