@@ -12,6 +12,8 @@ const radioVal = ref("1");
 
 const checkboxVal = ref([]);
 
+const collapseVal = ref(["1"]);
+
 const formData = reactive({
   name: "",
   age: "",
@@ -94,5 +96,26 @@ const handleOpen = () => {
     <a-checkbox label="2">2</a-checkbox>
   </a-checkbox-group>
   <div>checkboxVal{{ checkboxVal }}</div>
+  <hr />
+
+  <h3>collapse</h3>
+  <a-collapse v-model="collapseVal">
+    <a-collapse-item title="一致性 Consistency" name="1">
+      <div>
+        与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
+      </div>
+    </a-collapse-item>
+    <a-collapse-item title="反馈 Feedback" name="2">
+      <div>
+        与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
+      </div>
+    </a-collapse-item>
+    <a-collapse-item title="可控 Controllability" name="3">
+      <div>
+        帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。
+      </div>
+    </a-collapse-item>
+  </a-collapse>
+  <div>collapseVal：{{ collapseVal }}</div>
   <hr />
 </template>

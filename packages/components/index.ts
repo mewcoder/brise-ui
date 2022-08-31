@@ -10,6 +10,7 @@ import Modal from "./modal";
 import Switch from "./switch";
 import Radio from "./radio";
 import Checkbox from "./checkbox";
+import Collapse from "./collapse";
 
 const plugins = [
   Icon,
@@ -20,6 +21,7 @@ const plugins = [
   Switch,
   Radio,
   Checkbox,
+  Collapse,
   ...Form,
 ];
 

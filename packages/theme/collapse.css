@@ -1,0 +1,14 @@
+.a-collapse-item {
+  @apply border-t-1 border-t-1  border-gray-300;
+}
+
+.a-collapse-item__header {
+  @apply bg-gray-200 text-base p-2;
+  @apply cursor-pointer;
+}
+
+.a-collapse-item__content {
+  @apply p-2 text-gray-600;
+  @apply cursor-pointer;
+  @apply transition duration-200;
+}
