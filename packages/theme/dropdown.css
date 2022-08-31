@@ -1,0 +1,9 @@
+.dropdown-menu {
+  @apply border border-light-900 rounded shadow absolute z-50 w-20;
+  @apply list-none p-0;
+  @apply transition duration-150;
+}
+
+.dropdown-option {
+  @apply p-2 hover:bg-blue-300 cursor-pointer;
+}

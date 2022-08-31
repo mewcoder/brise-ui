@@ -161,4 +161,12 @@ const handleOpen = () => {
   <h3>tree</h3>
   <a-tree :data="treeVal" show-checkbox></a-tree>
   <hr />
+
+  <h3>dropdown</h3>
+  <a-dropdown>
+    <template v-for="item in 5">
+      <a-dropdown-item>{{ item }}</a-dropdown-item>
+    </template>
+  </a-dropdown>
+  <hr />
 </template>
