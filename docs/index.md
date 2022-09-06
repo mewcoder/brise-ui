@@ -7,7 +7,7 @@ titleTemplate: Vue3 Component Library
 hero:
   name: Atomu
   text: Vue3 Component Library
-  tagline: Powered by Vue3 & UnoCSS
+  tagline: Powered by UnoCSS
   image:
     src: /atom.svg
     alt: atomu
