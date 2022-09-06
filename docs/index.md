@@ -2,11 +2,11 @@
 layout: home
 
 title: Atomu
-titleTemplate: Vue component library powered by Vue3 & Unocss
+titleTemplate: Vue3 Component Library
 
 hero:
   name: Atomu
-  text: Vue component library
+  text: Vue3 Component Library
   tagline: Powered by Vue3 & UnoCSS
   image:
     src: /atom.svg
@@ -27,6 +27,6 @@ features:
     title: 使用 UnoCSS
     details: 原子化 CSS 方案
   - icon: 🌈
-    title: theme 定制
+    title: 支持定制 theme
     details: 主题在线切换
 ---

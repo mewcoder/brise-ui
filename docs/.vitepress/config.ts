@@ -1,6 +1,6 @@
 export default {
   title: "atomu",
-  description: "components",
+  description: "Vue3 Component Library",
   appearance: false,
   themeConfig: {
     logo: "/atom.svg",
@@ -9,7 +9,7 @@ export default {
     outlineTitle: "#",
     repo: "https://github.com/mewcoder/atomu",
     footer: {
-      copyright: "copyright © 2022 mewcoder",
+      copyright: "Copyright © 2022 mewcoder",
     },
     // nav: [
     //   { text: "指南", link: "/guide/installation", activeMatch: "/guide/" },
