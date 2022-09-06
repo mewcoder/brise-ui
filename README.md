@@ -5,7 +5,6 @@
 <h1 align="center">Atomu</h1>
 <p align="center">A Vue 3 Component Library Powered by Vue3 & UnoCSS</p>
 
----
 
 ## 文档
 
