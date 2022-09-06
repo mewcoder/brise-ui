@@ -1,5 +1,5 @@
 {
-  "name": "atoms-ui",
+  "name": "atomu",
   "private": true,
   "version": "0.0.1",
   "scripts": {
@@ -20,9 +20,9 @@
     "@unocss/transformer-directives": "^0.44.7",
     "@vicons/ionicons5": "^0.12.0",
     "@vitejs/plugin-vue": "^3.0.1",
-    "atoms-ui-theme": "workspace:*",
-    "atoms-ui-utils": "workspace:*",
-    "atoms-ui-vue": "workspace:*",
+    "atomu-theme": "workspace:*",
+    "atomu-utils": "workspace:*",
+    "atomu-vue": "workspace:*",
     "typescript": "^4.7.4",
     "unocss": "^0.45.13",
     "vite": "^3.0.4",

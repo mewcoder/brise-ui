@@ -1,8 +1,8 @@
 # 快速开始
 
 ```ts
-import { installComponents } from "atoms-ui-vue";
-import 'atoms-ui-theme'
+import { installComponents } from "atomu-vue";
+import 'atomu-theme'
 const app = createApp(App);
 installComponents(app);
 ```

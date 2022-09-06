@@ -1,5 +1,5 @@
 import _Input from "./src/input.vue";
-import { withInstall } from "atoms-ui-utils";
+import { withInstall } from "atomu-utils";
 
 const Input = withInstall(_Input);
 

@@ -1,6 +1,6 @@
 import _Form from "./src/form.vue";
 import _FormItem from "./src/form-item.vue";
-import { withInstall } from "atoms-ui-utils";
+import { withInstall } from "atomu-utils";
 
 const Form = withInstall(_Form);
 const FormItem = withInstall(_FormItem);

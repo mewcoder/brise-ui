@@ -1,6 +1,6 @@
 import _Checkbox from "./src/checkbox.vue";
 import _CheckboxGroup from "./src/checkbox-group.vue";
-import { withInstall } from "atoms-ui-utils";
+import { withInstall } from "atomu-utils";
 
 const Checkbox = withInstall(_Checkbox, {
    _CheckboxGroup,

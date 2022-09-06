@@ -1,31 +1,29 @@
 export default {
-  title: "atoms",
+  title: "atomu",
   description: "components",
   appearance: false,
   themeConfig: {
     logo: "/atom.svg",
-    siteTitle: false,
+    siteTitle: "atomu",
     docsDir: "docs",
     outlineTitle: "#",
-    repo: "https://github.com/mewcoder/atoms-ui",
+    repo: "https://github.com/mewcoder/atomu",
     footer: {
-      copyright: "Copyright © 2022 mewcoder",
+      copyright: "copyright © 2022 mewcoder",
     },
-    nav: [
-      { text: "指南", link: "/guide/installation", activeMatch: "/guide/" },
-      { text: "组件", link: "/component/icon", activeMatch: "/component/" },
-    ],
+    // nav: [
+    //   { text: "指南", link: "/guide/installation", activeMatch: "/guide/" },
+    //   { text: "组件", link: "/component/icon", activeMatch: "/component/" },
+    // ],
     sidebar: {
-      "/guide/": [
+      "/": [
         {
           text: "指南",
           items: [
+            { text: "快速开始", link: "/guide/start" },
             { text: "安装", link: "/guide/installation" },
-            { text: "快速开始", link: "/guide/quieStart" },
           ],
         },
-      ],
-      "/component/": [
         {
           text: "组件",
           items: [
@@ -43,9 +41,10 @@ export default {
           ],
         },
       ],
+      "/component/": [],
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/mewcoder/atoms-ui" },
+      { icon: "github", link: "https://github.com/mewcoder/atomu" },
     ],
   },
 };

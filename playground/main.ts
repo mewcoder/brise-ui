@@ -1,8 +1,8 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
-import { installComponents } from "atoms-ui-vue";
-import 'atoms-ui-theme'
+import { installComponents } from "atomu-vue";
+import 'atomu-theme'
 
 const app = createApp(App);
 

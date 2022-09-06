@@ -1,5 +1,5 @@
 import _Icon from "./src/icon.vue";
-import { withInstall } from "atoms-ui-utils";
+import { withInstall } from "atomu-utils";
 
 const Icon = withInstall(_Icon);
 

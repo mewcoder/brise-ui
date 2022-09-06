@@ -1,5 +1,5 @@
 import _Switch from "./src/switch.vue";
-import { withInstall } from "atoms-ui-utils";
+import { withInstall } from "atomu-utils";
 
 const Switch = withInstall(_Switch);
 

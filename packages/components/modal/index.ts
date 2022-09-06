@@ -1,5 +1,5 @@
 import _Modal from "./src/modal.vue";
-import { withInstall } from "atoms-ui-utils";
+import { withInstall } from "atomu-utils";
 
 const Modal = withInstall(_Modal);
 

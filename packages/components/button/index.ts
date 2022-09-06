@@ -1,5 +1,5 @@
 import _Button from "./src/button.vue";
-import { withInstall } from "atoms-ui-utils";
+import { withInstall } from "atomu-utils";
 
 const Button = withInstall(_Button);
 

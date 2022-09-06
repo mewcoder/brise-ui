@@ -9,9 +9,9 @@ importers:
       '@vicons/ionicons5': ^0.12.0
       '@vitejs/plugin-vue': ^3.0.1
       async-validator: ^4.2.5
-      atoms-ui-theme: workspace:*
-      atoms-ui-utils: workspace:*
-      atoms-ui-vue: workspace:*
+      atomu-theme: workspace:*
+      atomu-utils: workspace:*
+      atomu-vue: workspace:*
       tiny-emitter: ^2.1.0
       typescript: ^4.7.4
       unocss: ^0.45.13
@@ -27,9 +27,9 @@ importers:
       '@unocss/transformer-directives': 0.44.7
       '@vicons/ionicons5': 0.12.0
       '@vitejs/plugin-vue': 3.0.1_vite@3.0.4+vue@3.2.37
-      atoms-ui-theme: link:packages/theme
-      atoms-ui-utils: link:packages/utils
-      atoms-ui-vue: link:packages/components
+      atomu-theme: link:packages/theme
+      atomu-utils: link:packages/utils
+      atomu-vue: link:packages/components
       typescript: 4.7.4
       unocss: 0.45.13_vite@3.0.4
       vite: 3.0.4

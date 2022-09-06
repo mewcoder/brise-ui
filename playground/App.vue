@@ -69,7 +69,7 @@ const handleOpen = () => {
 </script>
 
 <template>
-  <h1>atoms-ui</h1>
+  <h1>atomu</h1>
   <hr />
 
   <h3>button</h3>

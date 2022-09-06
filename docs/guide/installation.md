@@ -1,6 +1,6 @@
 # 安装
 
 ```bash
-npm i atoms-ui-vue
-npm i atoms-ui-theme
+npm i atomu-vue
+npm i atomu-theme
 ```
