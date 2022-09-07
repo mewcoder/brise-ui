@@ -1,13 +1,18 @@
 .a-button {
-  @apply px-4 h-8 rounded cursor-pointer shadow border-1 border-transparent hover:opacity-80  hover:ring-2;
-  @apply transition duration-150;
+  @apply box-border border-1 border-transparent outline-none shadow cursor-pointer rounded;
+  @apply px-4 h-8;
+  @apply inline-flex flex items-center;
+  @apply hover:opacity-70  hover:ring-4 ring-gray-100;
+  @apply transition duration-250;
 }
+
 .a-button + .a-button {
   @apply ml-2;
 }
 
 .a-button--default {
-  @apply bg-white border border-gray-200 hover:bg-gray-200 text-dark-400 ring-gray-100;
+  @apply border-gray-200;
+  @apply bg-white  text-dark-400;
 }
 
 .a-button--primary {
@@ -18,10 +23,18 @@
   @apply bg-success text-white;
 }
 
+.a-button--info {
+  @apply bg-info text-white;
+}
+
 .a-button--warning {
   @apply bg-warning text-white;
 }
 
 .a-button--danger {
   @apply bg-danger text-white;
+}
+
+.a-button--disabled {
+  @apply opacity-70 cursor-not-allowed;
 }

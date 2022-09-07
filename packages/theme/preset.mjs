@@ -5,6 +5,7 @@ export function defaultTheme() {
       colors: {
         primary: "var(--a-primary)",
         success: "var(--a-success)",
+        info: "var(--a-info)",
         warning: "var(--a-warning)",
         danger: "var(--a-danger)",
       },

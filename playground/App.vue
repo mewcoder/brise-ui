@@ -73,11 +73,17 @@ const handleOpen = () => {
   <hr />
 
   <h3>button</h3>
-  <a-button>按钮</a-button>
-  <a-button type="primary">按钮</a-button>
-  <a-button type="success">按钮</a-button>
-  <a-button type="warning">按钮</a-button>
-  <a-button type="danger">按钮</a-button>
+  <div class="flex">
+    <a-button>按钮</a-button>
+    <a-button type="primary">
+      <a-icon size="10"> <AddCircle /> </a-icon>按钮
+    </a-button>
+    <a-button type="info">按钮</a-button>
+    <a-button type="success">按钮</a-button>
+    <a-button type="warning">按钮</a-button>
+    <a-button type="danger" disabled>按钮</a-button>
+  </div>
+
   <hr />
 
   <h3>icon</h3>
