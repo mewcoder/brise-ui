@@ -22,6 +22,6 @@
     "packages/**/*.d.ts",
     "packages/**/*.tsx",
     "packages/**/*.vue"
-  ],
+, "packages/theme/preset.js"  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

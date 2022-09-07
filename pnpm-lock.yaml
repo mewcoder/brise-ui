@@ -9,9 +9,9 @@ importers:
       '@vicons/ionicons5': ^0.12.0
       '@vitejs/plugin-vue': ^3.1.0
       async-validator: ^4.2.5
-      atomu-theme: workspace:0.0.1
-      atomu-utils: workspace:0.0.1
-      atomu-vue: workspace:0.0.1
+      atomu-theme: workspace:*
+      atomu-utils: workspace:*
+      atomu-vue: workspace:*
       tiny-emitter: ^2.1.0
       typescript: ^4.8.2
       unocss: ^0.45.18

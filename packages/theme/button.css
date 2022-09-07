@@ -9,18 +9,19 @@
 .a-button--default {
   @apply bg-white border border-gray-200 hover:bg-gray-200 text-dark-400 ring-gray-100;
 }
+
 .a-button--primary {
-  @apply bg-blue-500  text-white ring-blue-200;
+  @apply bg-primary text-white;
 }
 
 .a-button--success {
-  @apply bg-green-500 text-white ring-green-200;
+  @apply bg-success text-white;
 }
 
 .a-button--warning {
-  @apply bg-orange-500 text-white ring-orange-200;
+  @apply bg-warning text-white;
 }
 
 .a-button--danger {
-  @apply bg-red-500 text-white ring-red-200;
+  @apply bg-danger text-white;
 }

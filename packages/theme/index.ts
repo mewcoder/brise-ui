@@ -1,4 +1,6 @@
 import "uno.css";
+import "@unocss/reset/normalize.css";
+import "./theme.css";
 import "./button.css";
 import "./icon.css";
 import "./input.css";
@@ -9,4 +11,4 @@ import "./radio.css";
 import "./checkbox.css";
 import "./collapse.css";
 import "./tree.css";
-import './dropdown.css'
+import "./dropdown.css";
