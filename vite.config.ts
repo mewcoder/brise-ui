@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import unocss from "unocss/vite";
 import { presetUno } from "unocss";
-import transformerDirective from "@unocss/transformer-directives";
+import transformerDirective from '@unocss/transformer-directives'
 import { resolve } from "path";
 import path from "path";
 import { fileURLToPath } from "url";

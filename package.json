@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "docs": "vite build && vitepress dev docs",
+    "docs": "vitepress dev docs",
     "build:theme": "vite build",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
@@ -16,18 +16,18 @@
     "tiny-emitter": "^2.1.0"
   },
   "devDependencies": {
-    "@types/node": "^18.6.4",
-    "@unocss/transformer-directives": "^0.44.7",
+    "@types/node": "^18.7.15",
+    "@unocss/transformer-directives": "^0.45.18",
     "@vicons/ionicons5": "^0.12.0",
-    "@vitejs/plugin-vue": "^3.0.1",
-    "atomu-theme": "workspace:*",
-    "atomu-utils": "workspace:*",
-    "atomu-vue": "workspace:*",
-    "typescript": "^4.7.4",
-    "unocss": "^0.45.13",
-    "vite": "^3.0.4",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "atomu-theme": "workspace:0.0.1",
+    "atomu-utils": "workspace:0.0.1",
+    "atomu-vue": "workspace:0.0.1",
+    "typescript": "^4.8.2",
+    "unocss": "^0.45.18",
+    "vite": "^3.1.0",
     "vitepress": "1.0.0-alpha.12",
-    "vue": "^3.2.37",
+    "vue": "^3.2.38",
     "vue-tsc": "^0.38.9"
   },
   "author": {
