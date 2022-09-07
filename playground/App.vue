@@ -66,10 +66,21 @@ const modalVal = ref(false);
 const handleOpen = () => {
   modalVal.value = true;
 };
+
+const selectedValue = ref("one");
+const changeTheme = (color: string) => {
+  document.documentElement.classList.remove(selectedValue.value);
+  selectedValue.value = color;
+  document.documentElement.classList.add(color);
+};
+
+document.documentElement.classList.add(selectedValue.value);
 </script>
 
 <template>
   <h1>atomu</h1>
+  <a-button type="primary" @click="changeTheme('one')"> 切换主题 </a-button>
+  <a-button type="success" @click="changeTheme('two')"> 切换主题 </a-button>
   <hr />
 
   <h3>button</h3>
