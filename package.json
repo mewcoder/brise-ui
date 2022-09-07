@@ -30,6 +30,10 @@
     "vue": "^3.2.37",
     "vue-tsc": "^0.38.9"
   },
+  "author": {
+    "name": "mewcoder",
+    "email": "1010953107@qq.com"
+  },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
