@@ -1,9 +1,10 @@
 <template>
-  <label class="a-radio" :class="{ 'is-checked': label === modelValue }">
+  <label class="a-radio" :class="{ 'is-checked': label === modelValue, 'is-disabled': disabled }">
     <input
-      class="a-radio__input"
+      class="a-radio__inner"
       type="radio"
       :value="label"
+      :disabled="disabled"
       v-model="modelValue"
     />
     <span class="a-radio__label">
@@ -14,27 +15,32 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, inject } from "vue";
-import { radioProps, RadioProps } from "./types";
+import { ref, computed, inject } from 'vue';
+import { radioProps, RadioProps } from './radio';
 
 const props = defineProps(radioProps);
-const radioRef = ref<HTMLInputElement>();
 
-const radioGroup: any = inject("radioGroup", undefined);
+const radioGroup: any = inject('radioGroup', undefined);
 
-const modelValue = computed<RadioProps["label"]>({
+const disabled = computed(() => {
+  return radioGroup.disabled || props.disabled;
+});
+
+// console.log(disabled.value);
+
+const modelValue = computed<RadioProps['label']>({
   get() {
     return radioGroup!.modelValue;
   },
   set(val) {
     radioGroup!.handleChange(val);
-  },
+  }
 });
 </script>
 
 <script lang="ts">
 export default {
-  name: "ARadio",
-  inheritAttrs: false,
+  name: 'ARadio',
+  inheritAttrs: false
 };
 </script>

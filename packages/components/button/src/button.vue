@@ -13,7 +13,7 @@ const props = defineProps(buttonProps);
 const classObj = computed(() => ({
   'a-button': true,
   [`a-button--${props.type}`]: true,
-  'a-button--disabled': props.disabled
+  'is-disabled': props.disabled
 }));
 </script>
 

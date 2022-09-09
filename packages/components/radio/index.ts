@@ -1,17 +1,19 @@
-import _Radio from "./src/radio.vue";
-import _RadioGroup from "./src/radio-group.vue";
-import { withInstall } from "atomu-utils";
+import _Radio from './src/radio.vue';
+import _RadioGroup from './src/radio-group.vue';
+import { withInstall, withNoopInstall } from 'atomu-utils';
 
 const Radio = withInstall(_Radio, {
-   _RadioGroup,
+  _RadioGroup
 });
 
-
 export default Radio;
-export * from "./src/types";
+export const RadioGroup = withNoopInstall(_RadioGroup);
 
-declare module "vue" {
+export * from './src/radio';
+export * from './src/radio-group';
+declare module 'vue' {
   export interface GlobalComponents {
     ARadio: typeof Radio;
+    ARadioGroup: typeof RadioGroup;
   }
 }

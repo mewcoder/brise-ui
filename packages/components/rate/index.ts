@@ -5,7 +5,7 @@ const Rate = withInstall(_Rate);
 
 export default Rate;
 
-export * from "./src/types";
+export * from "./src/rate";
 
 declare module "vue" {
   export interface GlobalComponents {

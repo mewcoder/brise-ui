@@ -1,5 +1,5 @@
 <template>
-  <div class="a-rate" :class="{ 'a-rate--disabled': disabled }">
+  <div :class="classObj">
     <span
       v-for="(item, index) in 5"
       :key="index"
@@ -15,11 +15,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { rateProps } from "./types";
+import { ref, computed } from 'vue';
+import { rateProps } from './rate';
 
 const props = defineProps(rateProps);
-const emit = defineEmits(["update:modelValue", "change"]);
+const emit = defineEmits(['update:modelValue', 'change']);
+
+const classObj = computed(() => ({
+  'a-rate': true,
+  'a-rate--disabled': props.disabled
+}));
 
 let currentValue = ref(props.modelValue);
 
@@ -35,15 +40,14 @@ const resetCurrentValue = () => {
 
 const selectValue = (val: number) => {
   if (props.disabled) return;
-  console.log("1");
-  emit("update:modelValue", val);
-  emit("change", val);
+  emit('update:modelValue', val);
+  emit('change', val);
 };
 </script>
 
 <script lang="ts">
 export default {
-  name: "ARate",
-  inheritAttrs: false,
+  name: 'ARate',
+  inheritAttrs: false
 };
 </script>

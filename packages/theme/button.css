@@ -35,6 +35,6 @@
   @apply bg-danger text-white;
 }
 
-.a-button--disabled {
+.a-button.is-disabled {
   @apply opacity-50 hover:opacity-40 hover:ring-0 cursor-not-allowed;
 }

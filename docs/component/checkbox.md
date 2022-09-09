@@ -1,8 +1,6 @@
 # checkbox 多选框
 
-## 用法
-
-### 基础使用
+## 基础使用
 
   <a-checkbox-group v-model="checkboxVal">
     <a-checkbox label="1">1</a-checkbox>

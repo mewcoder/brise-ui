@@ -1,65 +1,65 @@
 <script setup lang="ts">
-import { ref, reactive, watch } from "vue";
-import { ArrowUpCircleSharp, AddCircle, Alarm, At } from "@vicons/ionicons5";
+import { ref, reactive, watch } from 'vue';
+import { ArrowUpCircleSharp, AddCircle, Alarm, At } from '@vicons/ionicons5';
 
-const inputVal = ref("atomu vue");
+const inputVal = ref('atomu vue');
 
 const rateVal = ref(2);
 
 const switchVal = ref(false);
 
-const radioVal = ref("1");
+const radioVal = ref('1');
 
 const checkboxVal = ref([]);
 
-const collapseVal = ref(["1"]);
+const collapseVal = ref(['1']);
 
 const treeVal = reactive([
   {
-    title: "parent 1",
+    title: 'parent 1',
     expand: true,
     checked: false,
     children: [
       {
-        title: "parent 1-1",
+        title: 'parent 1-1',
         expand: true,
         checked: false,
         children: [
           {
-            title: "leaf 1-1-1",
-            checked: false,
+            title: 'leaf 1-1-1',
+            checked: false
           },
           {
-            title: "leaf 1-1-2",
-            checked: false,
-          },
-        ],
+            title: 'leaf 1-1-2',
+            checked: false
+          }
+        ]
       },
       {
-        title: "parent 1-2",
+        title: 'parent 1-2',
         checked: false,
         children: [
           {
-            title: "leaf 1-2-1",
-            checked: false,
+            title: 'leaf 1-2-1',
+            checked: false
           },
           {
-            title: "leaf 1-2-1",
-            checked: false,
-          },
-        ],
-      },
-    ],
-  },
+            title: 'leaf 1-2-1',
+            checked: false
+          }
+        ]
+      }
+    ]
+  }
 ]);
 
 const formData = reactive({
-  name: "",
-  age: "",
+  name: '',
+  age: ''
 });
 
 const rules = {
-  name: [{ required: true, message: "请输入", trigger: "blur" }],
+  name: [{ required: true, message: '请输入', trigger: 'blur' }]
 };
 
 const modalVal = ref(false);
@@ -67,9 +67,9 @@ const handleOpen = () => {
   modalVal.value = true;
 };
 
-const radioValue = ref("default");
+const radioValue = ref('default');
 
-let selectedValue = "default";
+let selectedValue = 'default';
 const changeTheme = (color: string) => {
   document.documentElement.classList.remove(selectedValue);
   selectedValue = color;
@@ -147,6 +147,7 @@ const changeTheme = (color: string) => {
   <a-radio-group v-model="radioVal">
     <a-radio label="1">1</a-radio>
     <a-radio label="2">2</a-radio>
+    <a-radio label="3" disabled>3</a-radio>
   </a-radio-group>
   <div>radioVal：{{ radioVal }}</div>
   <hr />
@@ -162,19 +163,13 @@ const changeTheme = (color: string) => {
   <h3>collapse</h3>
   <a-collapse v-model="collapseVal">
     <a-collapse-item title="一致性 Consistency" name="1">
-      <div>
-        与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
-      </div>
+      <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
     </a-collapse-item>
     <a-collapse-item title="反馈 Feedback" name="2">
-      <div>
-        与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
-      </div>
+      <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
     </a-collapse-item>
     <a-collapse-item title="可控 Controllability" name="3">
-      <div>
-        帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。
-      </div>
+      <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
     </a-collapse-item>
   </a-collapse>
   <div>collapseVal：{{ collapseVal }}</div>
