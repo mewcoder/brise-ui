@@ -2,6 +2,7 @@ export default {
   title: 'atomu',
   description: 'Vue3 Component Library',
   appearance: false,
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     logo: '/atom.svg',
     siteTitle: 'atomu',
