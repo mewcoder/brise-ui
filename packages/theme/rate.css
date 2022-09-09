@@ -1,7 +1,12 @@
 .a-rate {
-  @apply cursor-pointer  text-2xl;
+  @apply cursor-pointer;
 }
-.a-rate--disabled {
+
+.a-rate__item svg {
+  @apply inline-block w-6 h-6 mx-0.5;
+}
+
+.a-rate.is-disabled {
   @apply cursor-not-allowed;
 }
 .a-rate__item--on {
