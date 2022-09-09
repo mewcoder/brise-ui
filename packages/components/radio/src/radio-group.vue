@@ -9,10 +9,11 @@ import { provide, toRefs, reactive } from "vue";
 import { RadioGroupProps } from "./types";
 import { radioGroupProps } from "./types";
 const props = defineProps(radioGroupProps);
-const emit = defineEmits(["update:modelValue"]);
+const emit = defineEmits(["update:modelValue", "change"]);
 
 const handleChange = (value: RadioGroupProps["modelValue"]) => {
   emit("update:modelValue", value);
+  emit("change", value);
 };
 
 provide("radioGroup", reactive({ handleChange, ...toRefs(props) }));

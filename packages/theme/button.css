@@ -2,7 +2,7 @@
   @apply box-border border-1 border-transparent outline-none shadow cursor-pointer rounded;
   @apply px-4 h-8;
   @apply inline-flex flex items-center;
-  @apply hover:opacity-70  hover:ring-4 ring-gray-100;
+  @apply hover:opacity-70  hover:ring-4 ring-gray-200;
   @apply transition duration-250;
 }
 
@@ -36,5 +36,5 @@
 }
 
 .a-button--disabled {
-  @apply opacity-70 cursor-not-allowed;
+  @apply opacity-50 hover:opacity-40 hover:ring-0 cursor-not-allowed;
 }

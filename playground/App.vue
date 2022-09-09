@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive } from "vue";
+import { ref, reactive, watch } from "vue";
 import { ArrowUpCircleSharp, AddCircle, Alarm, At } from "@vicons/ionicons5";
 
 const inputVal = ref("input");
@@ -67,20 +67,25 @@ const handleOpen = () => {
   modalVal.value = true;
 };
 
-const selectedValue = ref("one");
+const radioValue = ref("default");
+
+let selectedValue = "default";
 const changeTheme = (color: string) => {
-  document.documentElement.classList.remove(selectedValue.value);
-  selectedValue.value = color;
+  document.documentElement.classList.remove(selectedValue);
+  selectedValue = color;
   document.documentElement.classList.add(color);
 };
-
-document.documentElement.classList.add(selectedValue.value);
 </script>
 
 <template>
-  <h1>atomu</h1>
-  <a-button type="primary" @click="changeTheme('one')"> 切换主题 </a-button>
-  <a-button type="success" @click="changeTheme('two')"> 切换主题 </a-button>
+  <div class="flex items-center">
+    <h2>atomu-vue</h2>
+    <span class="ml-4 text-sm">切换主题：</span>
+    <a-radio-group v-model="radioValue" @change="changeTheme">
+      <a-radio label="default">default</a-radio>
+      <a-radio label="green">green</a-radio>
+    </a-radio-group>
+  </div>
   <hr />
 
   <h3>button</h3>
@@ -98,10 +103,10 @@ document.documentElement.classList.add(selectedValue.value);
   <hr />
 
   <h3>icon</h3>
-  <a-icon size="16"> <AddCircle /> </a-icon>
-  <a-icon size="16" color="blue"> <ArrowUpCircleSharp /> </a-icon>
-  <a-icon size="16" color="orange"> <Alarm /> </a-icon>
-  <a-icon size="16" color="red"> <At /> </a-icon>
+  <a-icon> <AddCircle /> </a-icon>
+  <a-icon color="green"> <ArrowUpCircleSharp /> </a-icon>
+  <a-icon color="orange"> <Alarm /> </a-icon>
+  <a-icon color="red"> <At /> </a-icon>
   <hr />
 
   <h3>input</h3>

@@ -9,27 +9,28 @@ pnpm install @vicons/ionicons5
 ## 使用
 
 <script setup lang="ts">
-import { ArrowUpCircleSharp, AddCircleOutline } from "@vicons/ionicons5";
+import { AddCircle, ArrowUpCircleSharp, Alarm, At } from "@vicons/ionicons5";
 </script>
 
-<a-icon size="20" color="red"> <ArrowUpCircleSharp /> </a-icon>
-<a-icon size="20"> <AddCircleOutline /> </a-icon>
+<a-icon color="#3b82f6"> <AddCircle /> </a-icon>
+<a-icon color="#22c55e"> <ArrowUpCircleSharp /> </a-icon>
+<a-icon color="#f97316"> <Alarm /> </a-icon>
+<a-icon color="#ef4444"> <At /> </a-icon>
 
 ```vue
 <template>
-  <a-icon size="20" color="red"> <ArrowUpCircleSharp /> </a-icon>
-  <a-icon size="20"> <AddCircleOutline /> </a-icon>
+  <a-icon color="#3b82f6"> <AddCircle /> </a-icon>
+  <a-icon color="#22c55e"> <ArrowUpCircleSharp /> </a-icon>
+  <a-icon color="#f97316"> <Alarm /> </a-icon>
+  <a-icon color="#ef4444"> <At /> </a-icon>
 </template>
 <script setup lang="ts">
-import { ArrowUpCircleSharp, AddCircleOutline } from "@vicons/ionicons5";
+import { AddCircle, ArrowUpCircleSharp, Alarm, At } from "@vicons/ionicons5";
 </script>
 ```
 
-## API
-
 ### props
 
-| 名称  | 类型          | 可选值 | 默认值 | 说明     |
-| ----- | ------------- | ------ | ------ | -------- |
-| size  | string/number | -      | 16     | 大小     |
-| color | string        | -      | -      | 图标颜色 |
+| 名称  | 类型   | 可选值 | 默认值 | 说明     |
+| ----- | ------ | ------ | ------ | -------- |
+| color | string | -      | -      | 图标颜色 |

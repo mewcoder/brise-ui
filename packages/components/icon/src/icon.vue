@@ -12,7 +12,6 @@ const props = defineProps(iconProps);
 
 const style = computed(() => {
   return {
-    ...(props.size ? { "font-size": `${props.size}px` } : {}),
     ...(props.color ? { color: props.color } : {}),
   };
 });

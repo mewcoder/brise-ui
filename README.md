@@ -23,11 +23,11 @@
 
 ## 特性
 
-- 基于 Vue3+TypesSript+Vite现代化开发方案
+- ⚡ 基于 Vue3+TypesSript+Vite现代化开发方案
 
-- 使用 UnoCSS 原子化 CSS 方案
+- ✨ 使用 UnoCSS 原子化 CSS 方案
 
-- 支持定制 theme 主题在线切换
+- 🌈 支持定制 theme 主题在线切换
 
 ## License
 
