@@ -1,6 +1,6 @@
 .a-button {
   @apply box-border border-1 border-transparent outline-none shadow cursor-pointer rounded;
-  @apply px-4 h-8;
+  @apply px-4 h-9;
   @apply inline-flex flex items-center;
   @apply hover:opacity-70  hover:ring-4 ring-gray-200;
   @apply transition duration-250;
