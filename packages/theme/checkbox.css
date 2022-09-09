@@ -13,7 +13,7 @@
 
 .a-checkbox__inner {
   @apply appearance-none cursor-pointer;
-  @apply h-4 w-4  bg-white border-solid border-1px border-gray-300 rounded-sm;
+  @apply h-5 w-5  bg-white border-solid border-1px border-gray-300 rounded;
   @apply text-primary hover:ring-2 ring-gray-200;
 }
 
@@ -29,6 +29,7 @@
 .a-checkbox.is-disabled {
   @apply opacity-50  cursor-not-allowed;
 }
+
 .is-disabled .a-checkbox__inner {
-  @apply hover:ring-0;
+  @apply cursor-not-allowed hover:ring-0;
 }

@@ -1,14 +1,14 @@
-import { ExtractPropTypes, PropType } from "vue";
+import { ExtractPropTypes, PropType } from 'vue';
 
 export const switchProps = {
   modelValue: {
     type: Boolean,
-    default: false,
+    default: false
   },
   disabled: {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 } as const;
 
 export type SwitchProps = ExtractPropTypes<typeof switchProps>;

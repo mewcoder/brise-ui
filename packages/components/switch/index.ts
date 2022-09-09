@@ -5,7 +5,7 @@ const Switch = withInstall(_Switch);
 
 export default Switch;
 
-export * from "./src/types";
+export * from "./src/swtich";
 
 declare module "vue" {
   export interface GlobalComponents {

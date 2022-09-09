@@ -1,6 +1,5 @@
 .a-switch {
   @apply relative;
-  
 }
 
 .a-switch__input {
@@ -8,18 +7,25 @@
 }
 
 .a-switch__core {
-  @apply relative inline-block w-12 h-6 bg-light-900 rounded-xl;
+  @apply relative inline-block w-12 h-6 bg-light-900 rounded-full;
+  @apply hover:ring-4 ring-gray-200;
   @apply cursor-pointer shadow;
 }
+
 .a-switch__button {
   @apply absolute top-0 left-0;
-  @apply transition duration-150;
-  @apply w-6 h-6 bg-white rounded-1/2 shadow-xl;
+  @apply transition duration-200;
+  @apply w-6 h-6 bg-white border border-gray-300 rounded-1/2 shadow;
 }
 
 .a-switch.is-checked .a-switch__core {
-  @apply bg-blue-500;
+  @apply bg-primary;
 }
+
 .a-switch.is-checked .a-switch__button {
   @apply translate-x-6;
+}
+
+.a-switch.is-disabled {
+  @apply opacity-50  cursor-not-allowed;
 }
