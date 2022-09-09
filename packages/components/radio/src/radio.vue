@@ -26,8 +26,6 @@ const disabled = computed(() => {
   return radioGroup.disabled || props.disabled;
 });
 
-// console.log(disabled.value);
-
 const modelValue = computed<RadioProps['label']>({
   get() {
     return radioGroup!.modelValue;

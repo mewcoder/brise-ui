@@ -28,6 +28,20 @@
   margin-top: 12px !important;
 }
 
+.vp-doc table {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 6px 12px;
+  text-align: left;
+  border-left: none;
+  border-right: none;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

@@ -14,12 +14,12 @@
   --a-danger: #ef4444; /* colors.red */
 }
 
-.green {
-  --a-primary: #0f766e;
-  --a-success: #15803d;
-  --a-info: #1d4ed8;
-  --a-warning: #a16207;
-  --a-danger: #b91c1c;
+.teal {
+  --a-primary: #14B8A6;
+  --a-success: #84CC16;
+  --a-info: #06B6D4;
+  --a-warning: #F59E0B;
+  --a-danger: #F43F5E;
 }
 
 /* https://www.tailwindcss.cn/docs/customizing-colors#-8 */

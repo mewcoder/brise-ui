@@ -1,9 +1,10 @@
 <template>
-  <label class="a-checkbox" :class="{ 'is-checked': isChecked }">
+  <label class="a-checkbox" :class="{ 'is-checked': isChecked, 'is-disabled': disabled }">
     <input
-      class="a-checkbox__input"
+      class="a-checkbox__inner"
       type="checkbox"
       :value="label"
+      :disabled="disabled"
       v-model="modelValue"
     />
     <span class="a-checkbox__label">
@@ -14,12 +15,16 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, inject } from "vue";
-import { checkboxProps, CheckboxProps } from "./types";
+import { computed, inject } from 'vue';
+import { checkboxProps, CheckboxProps } from './checkbox';
 
 const props: any = defineProps(checkboxProps);
 
-const checkboxGroup: any = inject("checkboxGroup", undefined);
+const checkboxGroup: any = inject('checkboxGroup', undefined);
+
+const disabled = computed(() => {
+  return checkboxGroup.disabled || props.disabled;
+});
 
 const modelValue = computed<CheckboxProps[]>({
   get() {
@@ -27,7 +32,7 @@ const modelValue = computed<CheckboxProps[]>({
   },
   set(val) {
     checkboxGroup!.handleChange(val);
-  },
+  }
 });
 
 const isChecked = () => {
@@ -37,7 +42,7 @@ const isChecked = () => {
 
 <script lang="ts">
 export default {
-  name: "ACheckbox",
-  inheritAttrs: false,
+  name: 'ACheckbox',
+  inheritAttrs: false
 };
 </script>

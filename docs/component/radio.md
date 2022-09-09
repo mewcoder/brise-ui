@@ -14,6 +14,11 @@
     <a-radio label="two">two</a-radio>
   </a-radio-group>
 </template>
+
+<script lang="ts" setup>
+import { ref } from 'vue';
+const radioVal = ref('two');
+</script>
 ```
 
 ### 禁用状态

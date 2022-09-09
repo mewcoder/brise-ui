@@ -8,7 +8,7 @@ const Checkbox = withInstall(_Checkbox, {
 
 
 export default Checkbox;
-export * from "./src/types";
+export * from "./src/checkbox";
 
 declare module "vue" {
   export interface GlobalComponents {

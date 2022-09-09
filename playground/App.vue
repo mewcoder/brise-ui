@@ -83,7 +83,7 @@ const changeTheme = (color: string) => {
     <span class="ml-4 text-sm">切换主题：</span>
     <a-radio-group v-model="radioValue" @change="changeTheme">
       <a-radio label="default">default</a-radio>
-      <a-radio label="green">green</a-radio>
+      <a-radio label="teal">teal</a-radio>
     </a-radio-group>
   </div>
   <hr />
@@ -97,7 +97,7 @@ const changeTheme = (color: string) => {
     <a-button type="info">按钮</a-button>
     <a-button type="success">按钮</a-button>
     <a-button type="warning">按钮</a-button>
-    <a-button type="danger" disabled>按钮</a-button>
+    <a-button type="danger">按钮</a-button>
   </div>
 
   <hr />

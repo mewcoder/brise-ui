@@ -1,5 +1,5 @@
 <template>
-  <div :class="classObj">
+  <div class="a-radio-group">
     <slot></slot>
   </div>
 </template>
@@ -10,11 +10,6 @@ import { radioGroupProps, RadioGroupProps } from './radio-group';
 
 const props = defineProps(radioGroupProps);
 const emit = defineEmits(['update:modelValue', 'change']);
-
-const classObj = computed(() => ({
-  'a-radio-group': true,
-  'is-disabled': props.disabled
-}));
 
 const handleChange = (value: RadioGroupProps['modelValue']) => {
   emit('update:modelValue', value);
