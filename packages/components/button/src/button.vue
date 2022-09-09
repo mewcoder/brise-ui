@@ -1,24 +1,25 @@
 <template>
-  <button :class="buttonClass">
+  <button :class="classObj">
     <slot></slot>
   </button>
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
-import { buttonProps } from "./api";
+import { computed } from 'vue';
+import { buttonProps } from './button';
 
 const props = defineProps(buttonProps);
 
-const buttonClass = computed(() => ({
-  "a-button": true,
+const classObj = computed(() => ({
+  'a-button': true,
   [`a-button--${props.type}`]: true,
-  "a-button--disabled": props.disabled,
+  'a-button--disabled': props.disabled
 }));
 </script>
 
 <script lang="ts">
 export default {
-  name: "a-button",
+  name: 'a-button',
+  inheritAttrs: false
 };
 </script>

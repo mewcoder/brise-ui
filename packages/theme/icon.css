@@ -1,4 +1,8 @@
 .a-icon {
   @apply inline-block;
-  @apply w-6 h-6 m-1;
+  @apply w-5 h-5;
+}
+
+.a-icon + .a-icon {
+  @apply ml-2;
 }

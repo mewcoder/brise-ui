@@ -6,7 +6,9 @@
 pnpm install @vicons/ionicons5
 ```
 
-## 使用
+## 用法
+
+### 基础用法
 
 <script setup lang="ts">
 import { AddCircle, ArrowUpCircleSharp, Alarm, At } from "@vicons/ionicons5";
@@ -25,11 +27,13 @@ import { AddCircle, ArrowUpCircleSharp, Alarm, At } from "@vicons/ionicons5";
   <a-icon color="#ef4444"> <At /> </a-icon>
 </template>
 <script setup lang="ts">
-import { AddCircle, ArrowUpCircleSharp, Alarm, At } from "@vicons/ionicons5";
+import { AddCircle, ArrowUpCircleSharp, Alarm, At } from '@vicons/ionicons5';
 </script>
 ```
 
-### props
+## API
+
+### 属性
 
 | 名称  | 类型   | 可选值 | 默认值 | 说明     |
 | ----- | ------ | ------ | ------ | -------- |

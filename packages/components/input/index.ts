@@ -5,7 +5,7 @@ const Input = withInstall(_Input);
 
 export default Input;
 
-export * from "./src/types";
+export * from "./src/input";
 
 declare module "vue" {
   export interface GlobalComponents {

@@ -1,17 +1,17 @@
-import { ExtractPropTypes, PropType } from "vue";
+import { ExtractPropTypes, PropType } from 'vue';
 
 export const inputProps = {
   modelValue: {
-    type: [Number, String] as PropType<number | string>,
-    default: "",
+    type: [String, Number] as PropType<string | number>,
+    default: ''
   },
   disabled: {
     type: Boolean,
-    default: false,
+    default: false
   },
   placeholder: {
-    type: String,
-  },
+    type: String
+  }
 } as const;
 
 export type InputProps = ExtractPropTypes<typeof inputProps>;

@@ -2,7 +2,7 @@
 import { ref, reactive, watch } from "vue";
 import { ArrowUpCircleSharp, AddCircle, Alarm, At } from "@vicons/ionicons5";
 
-const inputVal = ref("input");
+const inputVal = ref("atomu vue");
 
 const rateVal = ref(2);
 
@@ -112,12 +112,12 @@ const changeTheme = (color: string) => {
   <h3>input</h3>
   <a-input v-model="inputVal" />
   <a-input v-model="inputVal" placeholder="禁用状态" disabled />
-  <div>inputVal：{{ inputVal }}</div>
+  <div class="mt-2">inputVal：{{ inputVal }}</div>
   <hr />
 
   <h3>rate</h3>
   <a-rate v-model="rateVal" />
-  <div>rateVal：{{ rateVal }}</div>
+  <div class="mt-2">rateVal：{{ rateVal }}</div>
   <hr />
 
   <h3>switch</h3>
