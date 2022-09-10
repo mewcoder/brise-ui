@@ -19,10 +19,12 @@ export default {
           items: [{ text: '🚀 快速开始', link: '/guide/start' }]
         },
         {
-          text: '基础组件(2)',
+          text: '基础组件(4)',
           items: [
             { text: 'Icon 图标', link: '/component/icon' },
-            { text: 'Button 按钮', link: '/component/button' }
+            { text: 'Button 按钮', link: '/component/button' },
+            { text: '🚧 Tag 标签', link: '/component/tag' },
+            { text: '🚧 Layout 布局', link: '/component/layout' }
           ]
         },
         {

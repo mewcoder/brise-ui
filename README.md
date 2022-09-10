@@ -23,7 +23,9 @@
 
 ## 特性
 
-- ⚡ 基于 Vue3+TypesSript+Vite现代化开发方案
+- ⚡ 基于 Vue3+TypesSript+Vite 现代化开发方案
+
+- 🕹 MVP 组件库的最小实现
 
 - ✨ 使用 UnoCSS 原子化 CSS 方案
 
