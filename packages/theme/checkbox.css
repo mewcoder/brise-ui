@@ -1,4 +1,5 @@
 .a-checkbox-group {
+  @apply text-sm;
   @apply flex items-center;
 }
 

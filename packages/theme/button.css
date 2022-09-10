@@ -1,4 +1,5 @@
 .a-button {
+  @apply text-sm;
   @apply box-border border-1 border-transparent outline-none shadow cursor-pointer rounded;
   @apply h-9 min-w-20;
   @apply inline-flex flex items-center justify-center;

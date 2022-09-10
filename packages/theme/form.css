@@ -1,4 +1,5 @@
 .a-form {
+  @apply text-sm;
 }
 
 .a-form-item__label {

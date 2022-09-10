@@ -3,6 +3,7 @@
 }
 
 .a-radio {
+  @apply text-sm;
   @apply inline-flex items-center;
   @apply cursor-pointer;
 }
