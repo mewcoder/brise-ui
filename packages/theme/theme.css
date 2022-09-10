@@ -15,11 +15,15 @@
 }
 
 .teal {
-  --a-primary: #14B8A6;
-  --a-success: #84CC16;
-  --a-info: #06B6D4;
-  --a-warning: #F59E0B;
-  --a-danger: #F43F5E;
+  --a-primary: #14b8a6;
+  --a-success: #84cc16;
+  --a-info: #06b6d4;
+  --a-warning: #f59e0b;
+  --a-danger: #f43f5e;
 }
 
 /* https://www.tailwindcss.cn/docs/customizing-colors#-8 */
+
+* {
+  font-size: 14px;
+}

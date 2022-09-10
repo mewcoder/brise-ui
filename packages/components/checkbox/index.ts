@@ -1,17 +1,19 @@
-import _Checkbox from "./src/checkbox.vue";
-import _CheckboxGroup from "./src/checkbox-group.vue";
-import { withInstall } from "atomu-utils";
+import _Checkbox from './src/checkbox.vue';
+import _CheckboxGroup from './src/checkbox-group.vue';
+import { withInstall, withNoopInstall } from 'atomu-utils';
 
 const Checkbox = withInstall(_Checkbox, {
-   _CheckboxGroup,
+  _CheckboxGroup
 });
 
-
 export default Checkbox;
-export * from "./src/checkbox";
+export const CheckboxGroup = withNoopInstall(_CheckboxGroup);
 
-declare module "vue" {
+export * from './src/checkbox';
+export * from './src/checkbox-group';
+declare module 'vue' {
   export interface GlobalComponents {
-    ACheckBox: typeof Checkbox;
+    ACheckbox: typeof Checkbox;
+    ACheckboxGroup: typeof CheckboxGroup;
   }
 }

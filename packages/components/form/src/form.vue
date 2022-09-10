@@ -4,8 +4,9 @@
   </form>
 </template>
 <script setup lang="ts">
-import { reactive, provide, ref, toRefs } from "vue";
-import { formProps } from "./api";
+import { reactive, provide, ref, toRefs } from 'vue';
+import { formProps } from './form';
+
 const props = defineProps(formProps);
 
 const fields = ref<any[]>([]);
@@ -33,14 +34,14 @@ const validate = (callback: any) => {
     let valid = true;
     let count = 0;
     fields.value.forEach((field: any) => {
-      field.validate("", (errors: any) => {
+      field.validate('', (errors: any) => {
         if (errors) {
           valid = false;
         }
         if (++count === fields.value.length) {
           // 全部完成
           resolve(valid);
-          if (typeof callback === "function") {
+          if (typeof callback === 'function') {
             callback(valid);
           }
         }
@@ -50,19 +51,19 @@ const validate = (callback: any) => {
 };
 
 provide(
-  "form",
+  'form',
   reactive({
     ...toRefs(props),
     addField,
     removeField,
     resetFields,
-    validate,
+    validate
   })
 );
 </script>
 
 <script lang="ts">
 export default {
-  name: "AForm",
+  name: 'AForm'
 };
 </script>

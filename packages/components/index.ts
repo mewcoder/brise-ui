@@ -26,7 +26,7 @@ const plugins = [
   Collapse,
   Tree,
   Dropdown,
-  ...Form,
+  Form,
 ];
 
 export function installComponents(app: App) {

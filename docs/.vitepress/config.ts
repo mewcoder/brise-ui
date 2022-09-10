@@ -28,12 +28,12 @@ export default {
         {
           text: '表单组件',
           items: [
-            { text: 'Form 表单 ', link: '/component/form' },
             { text: 'Input 输入框', link: '/component/input' },
             { text: 'Radio 单选框', link: '/component/radio' },
             { text: 'Checkbox 多选框', link: '/component/checkbox' },
             { text: 'Switch 开关 ', link: '/component/switch' },
-            { text: 'Rate 评分', link: '/component/rate' }
+            { text: 'Rate 评分', link: '/component/rate' },
+            { text: 'Form 表单 ', link: '/component/form' }
           ]
         },
         {

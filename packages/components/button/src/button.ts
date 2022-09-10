@@ -8,6 +8,10 @@ export const buttonProps = {
   disabled: {
     type: Boolean,
     default: false
+  },
+  round: {
+    type: Boolean,
+    default: false
   }
 } as const;
 

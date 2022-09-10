@@ -1,0 +1,25 @@
+.a-form {
+}
+
+.a-form-item__label {
+}
+
+.a-form-item__label:after {
+  @apply content-[*] text-red-500 mx-1;
+}
+
+.a-form-item__content {
+  @apply mt-1;
+}
+
+.a-form-item {
+  @apply mb-4;
+}
+
+.a-form-item__error {
+  @apply text-red-500;
+}
+
+.a-form-item.is-error .a-input {
+  @apply border-red-500;
+}

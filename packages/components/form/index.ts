@@ -1,16 +1,20 @@
-import _Form from "./src/form.vue";
-import _FormItem from "./src/form-item.vue";
-import { withInstall } from "atomu-utils";
+import _Form from './src/form.vue';
+import _FormItem from './src/form-item.vue';
+import { withInstall, withNoopInstall } from 'atomu-utils';
 
-const Form = withInstall(_Form);
-const FormItem = withInstall(_FormItem);
+const Form = withInstall(_Form, {
+  _FormItem
+});
 
-export default [Form, FormItem];
+export default Form;
+export const FormItem = withNoopInstall(_FormItem);
 
-export * from "./src/api";
+export * from './src/form';
+export * from './src/form-item';
 
-declare module "vue" {
+declare module 'vue' {
   export interface GlobalComponents {
     AForm: typeof Form;
+    AFormItem: typeof FormItem;
   }
 }

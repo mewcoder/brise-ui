@@ -60,18 +60,18 @@ const radioVal = ref('two');
 | modelValue / v-model | string/number/boolean | -      | -      | 绑定值 |
 | disabled             | boolean               | -      | false  | 禁用   |
 
+## radio-group 事件
+
+| 名称   | 说明                   | 参数                     |
+| ------ | ---------------------- | ------------------------ |
+| change | 绑定值变化时触发的事件 | 选中的 radio 的 label 值 |
+
 ## radio 属性
 
 | 名称     | 类型                  | 可选值 | 默认值 | 说明   |
 | -------- | --------------------- | ------ | ------ | ------ |
 | label    | string/number/boolean | -      | -      | 绑定值 |
 | disabled | boolean               | -      | false  | 禁用   |
-
-## radio-group 事件
-
-| 名称   | 说明                   | 参数                     |
-| ------ | ---------------------- | ------------------------ |
-| change | 绑定值变化时触发的事件 | 选中的 radio 的 label 值 |
 
 <script lang="ts" setup>
 import { ref } from "vue";

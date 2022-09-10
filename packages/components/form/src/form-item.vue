@@ -4,7 +4,8 @@
     :class="[
       {
         'is-required': isRequired,
-      },
+        'is-error': validateState === 'error'
+      }
     ]"
   >
     <label v-if="label" class="a-form-item__label">{{ label }}</label>
@@ -17,17 +18,17 @@
   </div>
 </template>
 <script lang="ts" setup>
-import AsyncValidator from "async-validator";
-import { ref, provide, inject, computed, onMounted, onUnmounted } from "vue";
-import { formItemProps } from "./api";
+import AsyncValidator from 'async-validator';
+import { ref, provide, inject, computed, onMounted, onUnmounted } from 'vue';
+import { formItemProps } from './form-item';
 
 const props = defineProps(formItemProps);
 
-const form: any = inject("form", undefined);
+const form: any = inject('form', undefined);
 
-let initialValue = "";
-const validateState = ref("");
-const validateMessage = ref("");
+let initialValue = '';
+const validateState = ref('');
+const validateMessage = ref('');
 
 const fieldValue = computed(() => {
   if (!form.model || !props.prop) return;
@@ -57,9 +58,7 @@ const isRequired = computed(() => {
 
 // 过滤出符合要求的 rule 规则
 const getFilteredRule = (trigger: string) => {
-  return _rules.value.filter(
-    (rule: any) => !rule.trigger || rule.trigger.indexOf(trigger) !== -1
-  );
+  return _rules.value.filter((rule: any) => !rule.trigger || rule.trigger.indexOf(trigger) !== -1);
 };
 
 const validate = (trigger: string, callback: any) => {
@@ -69,26 +68,21 @@ const validate = (trigger: string, callback: any) => {
     return true;
   }
 
-  validateState.value = "validating";
+  validateState.value = 'validating';
   const validator = new AsyncValidator({
-    [props.prop]: rules,
+    [props.prop]: rules
   });
 
-  validator.validate(
-    { [props.prop]: fieldValue.value },
-    { firstFields: true },
-    (errors) => {
-      validateState.value = !errors ? "success" : "error";
-      validateMessage.value =
-        errors && errors[0] && errors[0].message ? errors[0].message : "";
-      callback && callback(validateMessage.value);
-    }
-  );
+  validator.validate({ [props.prop]: fieldValue.value }, { firstFields: true }, (errors) => {
+    validateState.value = !errors ? 'success' : 'error';
+    validateMessage.value = errors && errors[0] && errors[0].message ? errors[0].message : '';
+    callback && callback(validateMessage.value);
+  });
 };
 
 const clearValidate = () => {
-  validateState.value = "";
-  validateMessage.value = "";
+  validateState.value = '';
+  validateMessage.value = '';
 };
 
 // 重置数据
@@ -100,7 +94,7 @@ const resetField = () => {
 
 const context = {
   resetField,
-  validate,
+  validate
 };
 
 onMounted(() => {
@@ -115,11 +109,11 @@ onUnmounted(() => {
   form.removeField(context);
 });
 
-provide("form-item", context);
+provide('form-item', context);
 </script>
 
 <script lang="ts">
 export default {
-  name: "AFormItem",
+  name: 'AFormItem'
 };
 </script>

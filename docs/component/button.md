@@ -10,14 +10,32 @@
   <a-button type="warning">warning</a-button>
   <a-button type="danger">danger</a-button>
 </div>
+<div class="mt-4">   
+  <a-button round>default</a-button>
+  <a-button type="primary" round>primary</a-button>
+  <a-button type="success" round>success</a-button>
+  <a-button type="info" round>info</a-button>
+  <a-button type="warning" round>warning</a-button>
+  <a-button type="danger" round>danger</a-button>
+</div>
 
 ```vue
 <template>
-  <a-button>default</a-button>
-  <a-button type="success">success</a-button>
-  <a-button type="info">info</a-button>
-  <a-button type="warning">warning</a-button>
-  <a-button type="danger">danger</a-button>
+  <div>
+    <a-button>default</a-button>
+    <a-button type="success">success</a-button>
+    <a-button type="info">info</a-button>
+    <a-button type="warning">warning</a-button>
+    <a-button type="danger">danger</a-button>
+  </div>
+  <div class="mt-4">
+    <a-button round>default</a-button>
+    <a-button type="primary" round>primary</a-button>
+    <a-button type="success" round>success</a-button>
+    <a-button type="info" round>info</a-button>
+    <a-button type="warning" round>warning</a-button>
+    <a-button type="danger" round>danger</a-button>
+  </div>
 </template>
 ```
 
@@ -50,4 +68,5 @@
 | 名称     | 类型    | 可选值                                           | 默认值  | 说明     |
 | -------- | ------- | ------------------------------------------------ | ------- | -------- |
 | type     | string  | default, primary, success, info, warning, danger | default | 按钮类型 |
+| round    | boolean | true/false                                       | false   | 圆角按钮 |
 | disabled | boolean | true/false                                       | false   | 禁用状态 |
