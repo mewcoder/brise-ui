@@ -3,7 +3,7 @@
 }
 
 .a-rate__item svg {
-  @apply inline-block w-6 h-6 mx-0.5;
+  @apply inline-block w-5 h-5 mx-0.5;
 }
 
 .a-rate.is-disabled {
