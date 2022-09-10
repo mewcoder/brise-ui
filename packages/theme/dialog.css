@@ -5,7 +5,7 @@
 
 .a-dialog {
   @apply bg-white mx-auto z-2001;
-  @apply w-min-3
+  @apply w-min-3;
 }
 
 .a-dialog__header {
