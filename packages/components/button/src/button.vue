@@ -21,6 +21,6 @@ const classObj = computed(() => ({
 <script lang="ts">
 export default {
   name: 'a-button',
-  inheritAttrs: false
+  // inheritAttrs: false
 };
 </script>

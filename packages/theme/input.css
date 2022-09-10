@@ -1,6 +1,6 @@
 .a-input {
   @apply text-sm;
-  @apply inline-block h-9 px-2 min-w-60 rounded shadow outline-none border-1  border-gray-300;
+  @apply inline-block box-border h-9 px-2 min-w-60 rounded shadow outline-none border-1  border-gray-300;
   @apply hover:border-gray-400 focus:border-primary focus:ring-4;
   @apply transition duration-150;
 }

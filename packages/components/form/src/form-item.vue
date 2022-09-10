@@ -32,28 +32,26 @@ const validateMessage = ref('');
 
 const fieldValue = computed(() => {
   if (!form.model || !props.prop) return;
-  console.log(form.model[props.prop]);
   return form.model[props.prop];
 });
 
 const _rules = computed(() => {
   let formRules = form.rules;
-  console.log(formRules);
   formRules = formRules && props.prop ? formRules[props.prop] : [];
   return [].concat(formRules || []);
 });
 
 const isRequired = computed(() => {
   let rules = _rules.value;
-  let isRequired = false;
+  let required = false;
   if (rules && rules.length) {
     rules.every((rule: any) => {
       if (rule.required) {
-        isRequired = true;
+        required = true;
       }
     });
   }
-  return isRequired;
+  return required;
 });
 
 // 过滤出符合要求的 rule 规则

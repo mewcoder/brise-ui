@@ -5,6 +5,7 @@
 
 .a-dialog {
   @apply bg-white mx-auto z-2001;
+  @apply w-min-3
 }
 
 .a-dialog__header {
@@ -22,9 +23,9 @@
 }
 
 .a-dialog__body {
-  @apply p-20px;
+  @apply p-x-30px p-y-20px;
 }
 
 .a-dialog__footer {
-  @apply p-20px text-right;
+  @apply p-20px pt-0 text-right;
 }

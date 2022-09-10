@@ -5,7 +5,7 @@ const Modal = withInstall(_Modal);
 
 export default Modal;
 
-export * from "./src/types";
+export * from "./src/modal";
 
 declare module "vue" {
   export interface GlobalComponents {

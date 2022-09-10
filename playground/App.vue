@@ -62,9 +62,12 @@ const rules = {
   name: [{ required: true, message: '请输入', trigger: 'blur' }]
 };
 
-const modalVal = ref(false);
+const showModal = ref(false);
+
 const handleOpen = () => {
-  modalVal.value = true;
+  // console.log('1111111111')
+  showModal.value = true;
+  // console.log(modalVal.value);
 };
 
 const radioValue = ref('default');
@@ -127,7 +130,8 @@ const changeTheme = (color: string) => {
 
   <h3>modal</h3>
   <a-button type="primary" @click="handleOpen">打开弹窗</a-button>
-  <a-modal v-model="modalVal" title="模态框">
+
+  <a-modal v-model="showModal" title="模态框">
     <a-form :model="formData" :rules="rules">
       <a-form-item label="姓名" prop="name">
         <a-input v-model="formData.name" />
@@ -137,8 +141,8 @@ const changeTheme = (color: string) => {
       </a-form-item>
     </a-form>
     <template #footer>
-      <a-button type="primary" @click="modalVal = false">确定</a-button>
-      <a-button @click="modalVal = false">关闭</a-button>
+      <a-button type="primary" @click="showModal = false">确定</a-button>
+      <a-button @click="showModal = false">关闭</a-button>
     </template>
   </a-modal>
   <hr />

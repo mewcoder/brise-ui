@@ -1,21 +1,21 @@
-import { ExtractPropTypes, PropType } from "vue";
+import { ExtractPropTypes, PropType } from 'vue';
 
 export const modalProps = {
   modelValue: {
     type: Boolean,
-    default: false,
+    default: false
   },
   title: {
-    type: String,
+    type: String
   },
   width: {
     type: String,
-    default: "50%",
+    default: '50vw'
   },
   top: {
     type: String,
-    default: "15vh",
-  },
+    default: '15vh'
+  }
 } as const;
 
 export type ModalProps = ExtractPropTypes<typeof modalProps>;
