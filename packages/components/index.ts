@@ -6,7 +6,7 @@ import Button from "./button";
 import Input from "./input";
 import Form from "./form";
 import Rate from "./rate";
-import Modal from "./modal";
+import Dialog from "./dialog";
 import Switch from "./switch";
 import Radio from "./radio";
 import Checkbox from "./checkbox";
@@ -19,7 +19,7 @@ const plugins = [
   Button,
   Input,
   Rate,
-  Modal,
+  Dialog,
   Switch,
   Radio,
   Checkbox,

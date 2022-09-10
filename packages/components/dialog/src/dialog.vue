@@ -20,10 +20,10 @@
 </template>
 
 <script setup lang="ts">
-import { modalProps } from './modal';
+import { dialogProps } from './dialog';
 import { AIconClose } from '../../inner';
 
-defineProps(modalProps);
+defineProps(dialogProps);
 const emit = defineEmits(['update:modelValue']);
 
 const handleClose = () => {
@@ -33,7 +33,7 @@ const handleClose = () => {
 
 <script lang="ts">
 export default {
-  name: 'AModal',
+  name: 'ADialog',
   inheritAttrs: false
 };
 </script>

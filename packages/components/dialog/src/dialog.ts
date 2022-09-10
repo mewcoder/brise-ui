@@ -1,6 +1,6 @@
 import { ExtractPropTypes, PropType } from 'vue';
 
-export const modalProps = {
+export const dialogProps = {
   modelValue: {
     type: Boolean,
     default: false
@@ -18,4 +18,4 @@ export const modalProps = {
   }
 } as const;
 
-export type ModalProps = ExtractPropTypes<typeof modalProps>;
+export type DialogProps = ExtractPropTypes<typeof dialogProps>;

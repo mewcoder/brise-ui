@@ -1,11 +1,11 @@
-# Modal 模态框
+# Dialog 对话框
 
 ## 用法
 
 ### 基础使用
 
 <a-button type="primary" @click="handleOpen">打开弹窗</a-button>
-<a-modal v-model="showDialog" width="600px" title="模态框">
+<a-dialog v-model="showDialog" width="600px" title="对话框">
 <a-form :model="formData">
 <a-form-item label="姓名" prop="name">
 <a-input v-model="formData.name" />
@@ -18,12 +18,12 @@
 <a-button @click="showDialog = false">关闭</a-button>
 <a-button type="primary" @click="showDialog = false">确定</a-button>
 </template>
-</a-modal>
+</a-dialog>
 
 ```vue
 <template>
   <a-button type="primary" @click="handleOpen">打开弹窗</a-button>
-  <a-modal v-model="showDialog" width="600px" title="模态框">
+  <a-dialog v-model="showDialog" width="600px" title="对话框">
     <a-form :model="formData">
       <a-form-item label="姓名" prop="name">
         <a-input v-model="formData.name" />
@@ -36,7 +36,7 @@
       <a-button @click="showDialog = false">关闭</a-button>
       <a-button type="primary" @click="showDialog = false">确定</a-button>
     </template>
-  </a-modal>
+  </a-dialog>
 </template>
 <script lang="ts" setup>
 import { ref, reactive } from 'vue';
@@ -64,7 +64,7 @@ const handleOpen = () => {
 
 | 名称   | 说明         |
 | ------ | ------------ |
-| -      | Modal 内容   |
+| -      | Dialog 内容   |
 | header | 弹窗宽度     |
 | title  | 标题的内容   |
 | footer | 操作区的内容 |
