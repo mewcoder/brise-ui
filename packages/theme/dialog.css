@@ -4,7 +4,7 @@
 }
 
 .a-dialog {
-  @apply bg-white mx-auto z-2001;
+  @apply bg-white rounded-lg mx-auto z-2001;
   @apply w-min-3;
 }
 
