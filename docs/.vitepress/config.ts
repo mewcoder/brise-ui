@@ -21,8 +21,8 @@ export default {
         {
           text: '基础组件(4)',
           items: [
-            { text: 'Icon 图标', link: '/component/icon' },
             { text: 'Button 按钮', link: '/component/button' },
+            { text: 'Icon 图标', link: '/component/icon' },
             { text: '🚧 Tag 标签', link: '/component/tag' },
             { text: '🚧 Layout 布局', link: '/component/layout' }
           ]
@@ -50,7 +50,7 @@ export default {
           ]
         },
         {
-          text: '导航(4)',
+          text: '导航组件(4)',
           items: [
             { text: '🚧 Menu 菜单 ', link: '/component/menu' },
             { text: '🚧 Breadcrumb 面包屑 ', link: '/component/breadcrumb' },
@@ -61,7 +61,7 @@ export default {
         {
           text: '反馈组件(5)',
           items: [
-            { text: '🚧 Alert 提示 ', link: '/component/alert' },
+            { text: 'Alert 提示 ', link: '/component/alert' },
             { text: '🚧 Message 信息 ', link: '/component/message' },
             { text: '🚧 Notification 通知 ', link: '/component/notification' },
             { text: 'Dialog 对话框 ', link: '/component/dialog' },

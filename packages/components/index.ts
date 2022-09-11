@@ -13,7 +13,7 @@ import Checkbox from "./checkbox";
 import Collapse from "./collapse";
 import Tree from "./tree";
 import Dropdown from "./dropdown";
-
+import Alert from "./alert";
 const plugins = [
   Icon,
   Button,
@@ -27,6 +27,7 @@ const plugins = [
   Tree,
   Dropdown,
   Form,
+  Alert
 ];
 
 export function installComponents(app: App) {

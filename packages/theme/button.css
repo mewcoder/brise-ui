@@ -3,7 +3,7 @@
   @apply box-border border-1 border-transparent outline-none shadow cursor-pointer rounded;
   @apply h-9 min-w-20;
   @apply inline-flex flex items-center justify-center;
-  @apply hover:opacity-70  hover:ring-4 ring-gray-200;
+  @apply hover:opacity-80  hover:ring-4 ring-gray-200;
   @apply transition duration-250;
 }
 
@@ -13,7 +13,7 @@
 
 .a-button--default {
   @apply border-gray-200;
-  @apply bg-white  text-dark-400;
+  @apply bg-white  text-dark-400 active:bg-gray-200;
 }
 
 .a-button--primary {

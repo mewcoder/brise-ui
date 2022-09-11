@@ -1,14 +1,14 @@
-import _Rate from "./src/rate.vue";
+import _Alert from "./src/alert.vue";
 import { withInstall } from "atomu-utils";
 
-const Rate = withInstall(_Rate);
+const Alert = withInstall(_Alert);
 
-export default Rate;
+export default Alert;
 
-export * from "./src/types";
+export * from "./src/alert";
 
 declare module "vue" {
   export interface GlobalComponents {
-    ARate: typeof Rate;
+    AAlert: typeof Alert;
   }
 }

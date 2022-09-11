@@ -1,0 +1,46 @@
+.a-alert {
+  @apply text-sm;
+  @apply box-border border-1 border-transparent outline-none shadow  rounded;
+  @apply h-10 w-full px-4;
+  @apply flex items-center;
+}
+
+.a-alert + .a-alert {
+  @apply mt-2;
+}
+
+.a-alert--success {
+  @apply bg-success text-white;
+}
+
+.a-alert--info {
+  @apply bg-info text-white;
+}
+
+.a-alert--warning {
+  @apply bg-warning text-white;
+}
+
+.a-alert--danger {
+  @apply bg-danger text-white;
+}
+
+.a-alert__close {
+  @apply w-4 h-4 cursor-pointer absolute right-2;
+}
+
+.a-alert--success.is-simple {
+  @apply border-success border-1 text-success bg-green-50;
+}
+
+.a-alert--info.is-simple {
+  @apply border-info border-1 text-info bg-blue-50;
+}
+
+.a-alert--warning.is-simple {
+  @apply border-warning border-1 text-warning bg-orange-50;
+}
+
+.a-alert--danger.is-simple {
+  @apply border-danger border-1 text-danger bg-red-50;
+}

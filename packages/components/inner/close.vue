@@ -26,7 +26,6 @@
 </template>
 <script lang="ts">
 export default {
-  name: 'AIconClose',
-  inheritAttrs: false
+  name: 'AIconClose'
 };
 </script>
