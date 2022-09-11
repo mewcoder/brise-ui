@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import vueJsx from "@vitejs/plugin-vue-jsx"; 
 import { resolve } from "path";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -16,6 +17,7 @@ export default defineConfig({
   root: "playground",
   plugins: [
     vue(),
+    vueJsx(),
     unocss({
       presets: [presetUno(), defaultTheme()],
       transformers: [transformerDirective()],

@@ -30,19 +30,19 @@
 }
 
 .a-alert--success.is-simple {
-  @apply  text-dark-400 bg-green-100;
+  @apply  text-success bg-green-100;
 }
 
 .a-alert--info.is-simple {
-  @apply text-dark-400 bg-blue-100;
+  @apply text-info bg-blue-100;
 }
 
 .a-alert--warning.is-simple {
-  @apply text-dark-400 bg-orange-100;
+  @apply text-warning bg-orange-100;
 }
 
 .a-alert--danger.is-simple {
-  @apply  text-dark-400 bg-red-100;
+  @apply  text-danger bg-red-100;
 }
 
 .alert-fade-enter-active,
