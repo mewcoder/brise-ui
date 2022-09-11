@@ -29,3 +29,13 @@
 .a-dialog__footer {
   @apply p-20px pt-0 text-right;
 }
+
+.dialog-fade-enter-active,
+.dialog-fade-leave-active {
+  @apply transition duration-200 ease-in-out;
+}
+
+.dialog-fade-enter-from,
+.dialog-fade-leave-to {
+  @apply opacity-0;
+}

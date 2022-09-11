@@ -44,3 +44,13 @@
 .a-alert--danger.is-simple {
   @apply border-danger border-1 text-danger bg-red-50;
 }
+
+.alert-fade-enter-active,
+.alert-fade-leave-active {
+  @apply transition duration-200 ease-in-out;
+}
+
+.alert-fade-enter-from,
+.alert-fade-leave-to {
+  @apply opacity-0;
+}

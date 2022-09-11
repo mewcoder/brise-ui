@@ -1,10 +1,11 @@
 <template>
-  <div v-if="visible" :class="classObj">
-    <slot>
-      <p class="a-alert__content">{{ title }}</p>
-    </slot>
-    <AIconClose v-if="closable" class="a-alert__close" @click="handleClose" />
-  </div>
+  <transition name="alert-fade">
+    <div v-if="visible" :class="classObj">
+      <slot>
+        <p class="a-alert__content">{{ title }}</p>
+      </slot>
+      <AIconClose v-if="closable" class="a-alert__close" @click="handleClose" /></div
+  ></transition>
 </template>
 
 <script setup lang="ts">
