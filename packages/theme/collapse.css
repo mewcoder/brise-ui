@@ -1,16 +1,34 @@
-.a-collapse-item {
-  @apply border-b-1  border-gray-300;
-}
 .a-collapse {
-  @apply border-t-1   border-gray-300;
+  @apply text-sm;
+  @apply border-t-1 border-gray-200;
 }
+
+.a-collapse-item {
+  @apply border-b-1  border-gray-200;
+}
+
 .a-collapse-item__header {
-  @apply bg-gray-200 text-base p-2;
+  @apply bg-gray-50  p-3;
   @apply cursor-pointer;
+  @apply flex justify-between items-center;
+}
+
+.a-collapse-item__header .a-icon {
+  @apply w-4 h-4;
 }
 
 .a-collapse-item__content {
-  @apply p-2 text-gray-600;
+  @apply px-3 py-4 text-gray-600;
   @apply cursor-pointer;
   @apply transition duration-200;
+}
+
+.collapse-fade-enter-active,
+.collapse-fade-leave-active {
+  @apply transition duration-200 ease;
+}
+
+.collapse-fade-enter-from,
+.collapse-fade-leave-to {
+  @apply opacity-0;
 }

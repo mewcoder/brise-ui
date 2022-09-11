@@ -1,29 +1,30 @@
 <template>
   <div class="a-collapse-item">
     <div class="a-collapse-item__header" @click="handleHeaderClick">
-      {{ title }}
+      <span> {{ title }}</span>
+      <AIconChevronDown v-if="isActive" />
+      <AIconChevronForward v-else />
     </div>
-    <transition >
-      <div v-show="isActive" :id="name" class="a-collapse-item__content">
+    <transition name="collapse-fade">
+      <div v-show="isActive" class="a-collapse-item__content">
         <slot /></div
     ></transition>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, inject, computed } from "vue";
-import { collapseItemProps } from "./types";
+import { ref, inject, computed } from 'vue';
+import { collapseItemProps } from './types';
+import { AIconChevronDown, AIconChevronForward } from '../../inner';
 
 const props = defineProps(collapseItemProps);
-const emit = defineEmits(["update:modelValue", "change"]);
+const emit = defineEmits(['update:modelValue', 'change']);
 
 const isClick = ref(false);
 
-const collapse: any = inject("collapse");
+const collapse: any = inject('collapse');
 
-const isActive = computed(() =>
-  collapse?.activeNames.value.includes(props.name)
-);
+const isActive = computed(() => collapse?.activeNames.value.includes(props.name));
 
 const handleHeaderClick = () => {
   collapse?.setAcitve(props.name);
@@ -33,7 +34,7 @@ const handleHeaderClick = () => {
 
 <script lang="ts">
 export default {
-  name: "ACollapseItem",
-  inheritAttrs: false,
+  name: 'ACollapseItem',
+  inheritAttrs: false
 };
 </script>

@@ -1,38 +1,44 @@
 # Collapse 折叠面板
 
-## 用法
+## 基础使用
 
-### 基础使用
-
-<a-rate v-model="rateVal" />
+ <a-collapse v-model="collapseVal">
+    <a-collapse-item title="一致性 Consistency" name="1">
+      <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
+    </a-collapse-item>
+    <a-collapse-item title="反馈 Feedback" name="2">
+      <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
+    </a-collapse-item>
+  </a-collapse>
 
 ```vue
 <template>
-  <a-rate v-model="rateVal" />
+  <a-collapse v-model="collapseVal">
+    <a-collapse-item title="一致性 Consistency" name="1">
+      <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
+    </a-collapse-item>
+    <a-collapse-item title="反馈 Feedback" name="2">
+      <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
+    </a-collapse-item>
+  </a-collapse>
 </template>
-
-<script lang="ts" setup>
-import { ref } from "vue";
-const rateVal = ref(2);
-</script>
 ```
 
+## collapse 属性
+
+| 名称                 | 类型  | 可选值 | 默认值 | 说明   |
+| -------------------- | ----- | ------ | ------ | ------ |
+| modelValue / v-model | array | -      | -      | 绑定值 |
+
+## collapse-item 属性
+
+| 名称  | 类型          | 可选值 | 默认值 | 说明   |
+| ----- | ------------- | ------ | ------ | ------ |
+| name  | string/number | -      | -      | 绑定值 |
+| title | string        | -      | false  | 标题   |
+
+
 <script lang="ts" setup>
 import { ref } from "vue";
-const rateVal = ref(2);
+const collapseVal = ref(['1']);
 </script>
-
-## API
-
-### props
-
-| 名称                 | 类型          | 可选值 | 默认值 | 说明   |
-| -------------------- | ------------- | ------ | ------ | ------ |
-| modelValue / v-model | string/number | -      | -      | 绑定值 |
-| disabled             | boolean       | -      | false  | 禁用   |
-
-### 事件
-
-| 名称   | 说明 | 参数 |
-| ------ | ---- | ---- |
-| change | -    | -    |
