@@ -1,14 +1,14 @@
 .a-collapse {
   @apply text-sm;
-  @apply border-t-1 border-gray-200;
+  @apply p-3 rounded-xl shadow;
 }
 
-.a-collapse-item {
-  @apply border-b-1  border-gray-200;
+.a-collapse-item + .a-collapse-item {
+  @apply mt-2;
 }
 
 .a-collapse-item__header {
-  @apply bg-gray-50  p-3;
+  @apply bg-gray-100 rounded-xl px-4 py-3;
   @apply cursor-pointer;
   @apply flex justify-between items-center;
 }
@@ -18,7 +18,7 @@
 }
 
 .a-collapse-item__content {
-  @apply px-3 py-4 text-gray-600;
+  @apply px-4 py-4 text-gray-600;
   @apply cursor-pointer;
   @apply transition duration-200;
 }

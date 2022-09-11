@@ -46,7 +46,7 @@ export default {
             { text: '🚧 Table 表格 ', link: '/component/table' },
             { text: '🚧 Tree 树 ', link: '/component/tree' },
             { text: '🚧 Carousel 走马灯', link: '/component/carousel' },
-            { text: '🚧 Collapse 折叠面板 ', link: '/component/collapse' }
+            { text: 'Collapse 折叠面板 ', link: '/component/collapse' }
           ]
         },
         {
