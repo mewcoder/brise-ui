@@ -18,7 +18,6 @@
 <template>
   <a-input v-model="inputVal" placeholder="禁用状态" disabled />
 </template>
-</script>
 ```
 
 ## 属性
@@ -29,6 +28,7 @@
 | disabled             | boolean       | -      | false  | 禁用     |
 | placeholder          | string        | -      | -      | 占位文本 |
 
+
 ## 事件
 
 | 名称   | 说明                    | 参数                     |
@@ -36,6 +36,7 @@
 | blur   | 在 Input 失去焦点时触发 | (event: Event)           |
 | focus  | 在 Input 获得焦点时触发 | (event: Event)           |
 | change | 在 Input 值改变时触发   | (value: string \|number) |
+
 
 <script lang="ts" setup>
 import { ref } from 'vue';

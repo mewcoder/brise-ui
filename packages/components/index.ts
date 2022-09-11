@@ -1,6 +1,8 @@
 import type { App } from "vue";
-export * from "./icon";
-export * from "./button";
+
+export * from './message'
+
+
 import Icon from "./icon";
 import Button from "./button";
 import Input from "./input";
