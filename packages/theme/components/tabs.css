@@ -17,8 +17,6 @@
   @apply p-4;
 }
 
-
-
 .tabs-fade-enter-active,
 .ditabsalog-fade-leave-active {
   @apply transition duration-200 ease;
