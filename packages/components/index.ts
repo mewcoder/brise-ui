@@ -1,21 +1,21 @@
-import type { App } from "vue";
+import type { App } from 'vue';
 
-export * from './message'
+export * from './message';
 
-
-import Icon from "./icon";
-import Button from "./button";
-import Input from "./input";
-import Form from "./form";
-import Rate from "./rate";
-import Dialog from "./dialog";
-import Switch from "./switch";
-import Radio from "./radio";
-import Checkbox from "./checkbox";
-import Collapse from "./collapse";
-import Tree from "./tree";
-import Dropdown from "./dropdown";
-import Alert from "./alert";
+import Icon from './icon';
+import Button from './button';
+import Input from './input';
+import Form from './form';
+import Rate from './rate';
+import Dialog from './dialog';
+import Switch from './switch';
+import Radio from './radio';
+import Checkbox from './checkbox';
+import Collapse from './collapse';
+import Tree from './tree';
+import Dropdown from './dropdown';
+import Alert from './alert';
+import Breadcrumb from './breadcrumb';
 const plugins = [
   Icon,
   Button,
@@ -29,7 +29,8 @@ const plugins = [
   Tree,
   Dropdown,
   Form,
-  Alert
+  Alert,
+  Breadcrumb
 ];
 
 export function installComponents(app: App) {

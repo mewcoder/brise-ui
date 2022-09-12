@@ -56,7 +56,7 @@ export default {
           text: '导航组件(4)',
           items: [
             { text: '🚧 Menu 菜单 ', link: '/component/menu' },
-            { text: '🚧 Breadcrumb 面包屑 ', link: '/component/breadcrumb' },
+            { text: 'Breadcrumb 面包屑 ', link: '/component/breadcrumb' },
             { text: '🚧 Tabs 标签页', link: '/component/tabs' },
             { text: '🚧 Backtop 回到顶部 ', link: '/component/backtop' }
           ]
@@ -68,7 +68,7 @@ export default {
             { text: '🚧 Message 信息 ', link: '/component/message' },
             { text: '🚧 Notification 通知 ', link: '/component/notification' },
             { text: 'Dialog 对话框 ', link: '/component/dialog' },
-            { text: 'Drawer 抽屉 ', link: '/component/drawer' }
+            { text: '🚧 Drawer 抽屉 ', link: '/component/drawer' }
           ]
         }
       ]
