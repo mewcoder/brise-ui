@@ -1,5 +1,4 @@
 .a-checkbox-group {
-  @apply text-sm;
   @apply flex items-center;
 }
 
@@ -14,8 +13,9 @@
 
 .a-checkbox__inner {
   @apply appearance-none cursor-pointer;
-  @apply h-4 w-4 bg-white border-solid border-1px border-gray-300 rounded-sm; 
-  @apply text-primary hover:ring-2 ring-gray-200;
+  @apply h-4 w-4 bg-white border-solid border-1px border-gray-300 rounded-sm;
+  @apply text-primary focus:ring-1;
+  @apply focus:ring-primary;
 }
 
 .a-checkbox__inner:checked {
@@ -24,7 +24,7 @@
 }
 
 .a-checkbox__label {
-  @apply ml-1;
+  @apply ml-2 text-sm;
 }
 
 .a-checkbox.is-disabled {

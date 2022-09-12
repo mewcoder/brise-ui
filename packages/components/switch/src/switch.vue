@@ -1,5 +1,5 @@
 <template>
-  <div
+  <span
     class="a-switch"
     :class="{ 'is-checked': modelValue, 'is-disabled': disabled }"
     @click="handleClick"
@@ -8,7 +8,7 @@
     <span class="a-switch__core">
       <span class="a-switch__button"></span>
     </span>
-  </div>
+  </span>
 </template>
 
 <script setup lang="ts">

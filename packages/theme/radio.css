@@ -3,7 +3,6 @@
 }
 
 .a-radio {
-  @apply text-sm;
   @apply inline-flex items-center;
   @apply cursor-pointer;
 }
@@ -15,7 +14,8 @@
 .a-radio__inner {
   @apply appearance-none cursor-pointer;
   @apply h-4 w-4  bg-white border-solid border-1px border-gray-300 rounded-full;
-  @apply text-primary hover:ring-2 ring-gray-200;
+  @apply text-primary focus:ring-1;
+  @apply focus:ring-primary;
 }
 
 .a-radio__inner:checked {
@@ -24,7 +24,7 @@
 }
 
 .a-radio__label {
-  @apply ml-1;
+  @apply ml-2 text-sm;
 }
 
 .a-radio.is-disabled {

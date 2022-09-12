@@ -1,17 +1,18 @@
 <template>
-  <label class="a-checkbox" :class="{ 'is-checked': isChecked, 'is-disabled': disabled }">
+  <span class="a-checkbox" :class="{ 'is-checked': isChecked, 'is-disabled': disabled }">
     <input
       class="a-checkbox__inner"
       type="checkbox"
+      :id="label + ''"
       :value="label"
       :disabled="disabled"
       v-model="modelValue"
     />
-    <span class="a-checkbox__label">
+    <label :for="label + ''" class="a-checkbox__label">
       <slot></slot>
       <template v-if="!$slots.default">{{ label }}</template>
-    </span>
-  </label>
+    </label>
+  </span>
 </template>
 
 <script setup lang="ts">

@@ -8,8 +8,8 @@
 
 .a-switch__core {
   @apply relative inline-block w-10 h-5 bg-light-900 rounded-full;
-  @apply hover:ring-4 ring-gray-200;
   @apply cursor-pointer shadow;
+  @apply hover:ring-1 ring-offset-1 hover:ring-primary;
 }
 
 .a-switch__button {

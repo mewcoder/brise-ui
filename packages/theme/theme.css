@@ -22,4 +22,8 @@
   --a-danger: #f43f5e; /* colors.rose-500 */
 }
 
+svg{
+  @apply inline-block;
+}
+
 /* https://www.tailwindcss.cn/docs/customizing-colors#-8 */
