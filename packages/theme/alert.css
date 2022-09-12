@@ -9,7 +9,7 @@
   @apply mt-2;
 }
 .a-alert__icon {
-  @apply h-5 w-5 mr-1;
+  @apply mr-1;
 }
 
 .a-alert--success {

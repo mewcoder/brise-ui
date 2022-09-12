@@ -2,8 +2,8 @@
   <div class="a-collapse-item">
     <div class="a-collapse-item__header" @click="handleHeaderClick">
       <span> {{ title }}</span>
-      <AIconChevronDown v-if="isActive" />
-      <AIconChevronForward v-else />
+      <ChevronDownIcon v-if="isActive" />
+      <ChevronRightIcon v-else />
     </div>
     <transition name="collapse-fade">
       <div v-show="isActive" class="a-collapse-item__content">
@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import { ref, inject, computed } from 'vue';
 import { collapseItemProps } from './types';
-import { AIconChevronDown, AIconChevronForward } from '../../inner';
+import { ChevronDownIcon, ChevronRightIcon } from 'atomu-icons';
 
 const props = defineProps(collapseItemProps);
 const emit = defineEmits(['update:modelValue', 'change']);

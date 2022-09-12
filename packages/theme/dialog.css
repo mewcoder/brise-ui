@@ -19,7 +19,6 @@
 .a-dialog__close {
   @apply absolute top-20px right-20px;
   @apply bg-transparent border-transparent cursor-pointer;
-  @apply text-gray-500;
 }
 
 .a-dialog__body {
