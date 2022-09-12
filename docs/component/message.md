@@ -41,12 +41,12 @@
 | closable | boolean | true/false                     | true   | 关闭按钮 |
 
 <script lang="ts" setup>
-import { Message } from 'atomu-vue'
-const handle = ()=>{
-  Message({
-      closable: true,
-      message: '恭喜你，这是一条成功消息',
-      type: 'success'
-  })
-}
+// import { Message } from 'atomu-vue'
+// const handle = ()=>{
+//   Message({
+//       closable: true,
+//       message: '恭喜你，这是一条成功消息',
+//       type: 'success'
+//   })
+// }
 </script>
