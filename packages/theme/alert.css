@@ -1,12 +1,15 @@
 .a-alert {
   @apply text-sm;
   @apply box-border border-1 border-transparent outline-none shadow  rounded;
-  @apply h-10 w-full px-4;
+  @apply h-10 w-full px-3;
   @apply flex items-center;
 }
 
 .a-alert + .a-alert {
   @apply mt-2;
+}
+.a-alert__icon {
+  @apply h-5 w-5 mr-1;
 }
 
 .a-alert--success {
@@ -30,7 +33,7 @@
 }
 
 .a-alert--success.is-simple {
-  @apply  text-success bg-green-100;
+  @apply text-success bg-green-100;
 }
 
 .a-alert--info.is-simple {
@@ -42,7 +45,7 @@
 }
 
 .a-alert--danger.is-simple {
-  @apply  text-danger bg-red-100;
+  @apply text-danger bg-red-100;
 }
 
 .alert-fade-enter-active,

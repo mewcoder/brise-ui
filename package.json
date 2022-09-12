@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.10",
+    "@vue-hero-icons/solid": "^1.7.2",
     "async-validator": "^4.2.5",
     "tiny-emitter": "^2.1.0"
   },
@@ -26,6 +27,7 @@
     "atomu-theme": "workspace:*",
     "atomu-utils": "workspace:*",
     "atomu-vue": "workspace:*",
+    "atomu-icons": "workspace:*",
     "typescript": "^4.8.2",
     "unocss": "^0.45.18",
     "vite": "^3.1.0",

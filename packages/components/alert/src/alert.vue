@@ -1,7 +1,10 @@
 <template>
   <transition name="alert-fade">
     <div v-if="visible" :class="classObj">
-      <CheckCircleIcon class="w-5 h-5"/>
+      <InformationCircleIcon v-if="type === 'info'" class="a-alert__icon" />
+      <CheckCircleIcon v-if="type === 'success'" class="a-alert__icon" />
+      <ExclamationCircleIcon v-if="type === 'warning'" class="a-alert__icon" />
+      <XCircleIcon v-if="type === 'danger'" class="a-alert__icon" />
       <slot>
         <p class="a-alert__content">{{ title }}</p>
       </slot>
@@ -13,7 +16,12 @@
 import { computed, ref } from 'vue';
 import { alertProps } from './alert';
 import { AIconClose } from '../../inner';
-import { CheckCircleIcon } from '@heroicons/vue/20/solid';
+import {
+  InformationCircleIcon,
+  CheckCircleIcon,
+  ExclamationCircleIcon,
+  XCircleIcon
+} from 'atomu-icons';
 
 const props = defineProps(alertProps);
 

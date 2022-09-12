@@ -10,7 +10,9 @@ importers:
       '@vicons/ionicons5': ^0.12.0
       '@vitejs/plugin-vue': ^3.1.0
       '@vitejs/plugin-vue-jsx': ^2.0.1
+      '@vue-hero-icons/solid': ^1.7.2
       async-validator: ^4.2.5
+      atomu-icons: workspace:*
       atomu-theme: workspace:*
       atomu-utils: workspace:*
       atomu-vue: workspace:*
@@ -23,6 +25,7 @@ importers:
       vue-tsc: ^0.38.9
     dependencies:
       '@heroicons/vue': 2.0.10_vue@3.2.38
+      '@vue-hero-icons/solid': 1.7.2
       async-validator: 4.2.5
       tiny-emitter: 2.1.0
     devDependencies:
@@ -31,6 +34,7 @@ importers:
       '@vicons/ionicons5': 0.12.0
       '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.38
       '@vitejs/plugin-vue-jsx': 2.0.1_vite@3.1.0+vue@3.2.38
+      atomu-icons: link:packages/icons
       atomu-theme: link:packages/theme
       atomu-utils: link:packages/utils
       atomu-vue: link:packages/components
@@ -44,7 +48,7 @@ importers:
   packages/components:
     specifiers: {}
 
-  packages/heroicons:
+  packages/icons:
     specifiers: {}
 
   packages/theme:
@@ -840,6 +844,12 @@ packages:
       '@vue/reactivity': 3.2.38
     dev: true
 
+  /@vue-hero-icons/solid/1.7.2:
+    resolution: {integrity: sha512-ngjgdYgdjXp8BuHmx998Kl2tAmbatJXdYO8Cut+DXo9OVGZMuVmIzIjnar4H5Wf9wFVdCuag+HazLEu9F7T3cw==}
+    dependencies:
+      babel-helper-vue-jsx-merge-props: 2.0.3
+    dev: false
+
   /@vue/babel-helper-vue-transform-on/1.0.2:
     resolution: {integrity: sha512-hz4R8tS5jMn8lDq6iD+yWL6XNB699pGIVLk7WSJnn1dbpjaazsjZQkieJoRX6gW5zpYSCFqQ7jUquPNY65tQYA==}
     dev: true
@@ -999,6 +1009,10 @@ packages:
 
   /async-validator/4.2.5:
     resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
+    dev: false
+
+  /babel-helper-vue-jsx-merge-props/2.0.3:
+    resolution: {integrity: sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==}
     dev: false
 
   /binary-extensions/2.2.0:

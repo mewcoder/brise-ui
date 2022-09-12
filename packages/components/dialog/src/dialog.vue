@@ -7,7 +7,7 @@
           <slot name="title">
             <span class="a-dialog__title">{{ title }}</span>
           </slot>
-          <button class="a-dialog__close" @click="handleClose"><AIconClose /></button>
+          <button class="a-dialog__close" @click="handleClose"><XMarkIcon /></button>
         </div>
         <div class="a-dialog__body">
           <!-- 默认插槽 -->
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { dialogProps } from './dialog';
-import { AIconClose } from '../../inner';
+import { XMarkIcon } from '@heroicons/vue/24/solid';
 
 defineProps(dialogProps);
 const emit = defineEmits(['update:modelValue']);
