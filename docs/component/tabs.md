@@ -2,7 +2,12 @@
 
 ## 基础使用
 
-<a-breadcrumb :value="bc" />
+  <a-tabs v-model="activeName">
+    <a-tab-pane label="use" name="first">User</a-tab-pane>
+    <a-tab-pane label="config" name="second">Config</a-tab-pane>
+    <a-tab-pane label="role" name="third">Role</a-tab-pane>
+    <a-tab-pane label="task" name="fourth">Task</a-tab-pane>
+  </a-tabs>
 
 ## 属性
 
@@ -18,5 +23,9 @@
 | change | 分数改变时触发 | (value:number) |
 
 <script lang="ts" setup>
-const bc = ['home','manage','promotion'];
+
+import { ref } from 'vue'
+
+const activeName = ref('first')
+
 </script>

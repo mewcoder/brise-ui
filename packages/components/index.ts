@@ -16,6 +16,8 @@ import Tree from './tree';
 import Dropdown from './dropdown';
 import Alert from './alert';
 import Breadcrumb from './breadcrumb';
+import Tabs from './tabs';
+
 const plugins = [
   Icon,
   Button,
@@ -30,7 +32,8 @@ const plugins = [
   Dropdown,
   Form,
   Alert,
-  Breadcrumb
+  Breadcrumb,
+  Tabs
 ];
 
 export function installComponents(app: App) {

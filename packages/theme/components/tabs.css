@@ -1,0 +1,30 @@
+.a-tabs__nav {
+  @apply flex;
+  @apply border-b-1 border-gray-300;
+}
+
+.a-tabs__item {
+  @apply block p-1 mr-4;
+  @apply;
+  @apply cursor-pointer;
+}
+
+.a-tabs__item.is-checked {
+  @apply text-primary border-primary border-b-2;
+}
+
+.a-tabs__content {
+  @apply p-4;
+}
+
+
+
+.tabs-fade-enter-active,
+.ditabsalog-fade-leave-active {
+  @apply transition duration-200 ease;
+}
+
+.tabs-fade-enter-from,
+.tabs-fade-leave-to {
+  @apply opacity-0;
+}

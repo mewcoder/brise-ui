@@ -57,7 +57,7 @@ export default {
           items: [
             { text: '🚧 Menu 菜单 ', link: '/component/menu' },
             { text: 'Breadcrumb 面包屑 ', link: '/component/breadcrumb' },
-            { text: '🚧 Tabs 标签页', link: '/component/tabs' },
+            { text: 'Tabs 标签页', link: '/component/tabs' },
             { text: '🚧 Backtop 回到顶部 ', link: '/component/backtop' }
           ]
         },

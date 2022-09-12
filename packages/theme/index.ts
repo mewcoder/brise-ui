@@ -15,3 +15,4 @@ import './components/dropdown.css';
 import './components/form.css';
 import './components/alert.css';
 import './components/breadcrumb.css';
+import './components/tabs.css'
