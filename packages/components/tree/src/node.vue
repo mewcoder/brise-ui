@@ -2,10 +2,10 @@
   <ul class="tree-ul">
     <li class="tree-li">
       <span class="tree-expand" @click="handleExpand">
-        <AIconCaretForWard
+        <ChevronRightIcon
           v-if="treeData.children && treeData.children.length && !treeData.expand"
         />
-        <AIconCaretDown v-if="treeData.children && treeData.children.length && treeData.expand" />
+        <ChevronDownIcon v-if="treeData.children && treeData.children.length && treeData.expand" />
       </span>
       <input v-if="showCheckbox" type="checkbox" :value="treeData.checked" @input="handleCheck" />
       <span>{{ treeData.title }}</span>
@@ -23,7 +23,7 @@
 <script setup lang="ts">
 import { reactive } from 'vue';
 import { nodeProps } from './types';
-import { AIconCaretForWard, AIconCaretDown } from '../../inner';
+import { ChevronRightIcon, ChevronDownIcon } from 'atomu-icons';
 
 const props = defineProps(nodeProps);
 

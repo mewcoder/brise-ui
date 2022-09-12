@@ -16,7 +16,10 @@ export default {
       '/': [
         {
           text: '指南',
-          items: [{ text: '🚀 快速开始', link: '/guide/start' }]
+          items: [
+            { text: '🚀 快速开始', link: '/guide/start' },
+            { text: '🎨 颜色', link: '/guide/color' }
+          ]
         },
         {
           text: '基础组件(4)',

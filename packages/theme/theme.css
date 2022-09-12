@@ -7,21 +7,19 @@
 }
 
 .default {
-  --a-primary: #4f46e5; /* colors.indigo */
-  --a-success: #22c55e; /* colors.green */
-  --a-info: #3b82f6; /* colors.blue */
-  --a-warning: #f97316; /* colors.orange */
-  --a-danger: #ef4444; /* colors.red */
+  --a-primary: #4f46e5; /* colors.indigo-600 */
+  --a-success: #22c55e; /* colors.green-500 */
+  --a-info: #3b82f6; /* colors.blue-500 */
+  --a-warning: #f97316; /* colors.orange-500 */
+  --a-danger: #ef4444; /* colors.red-500 */
 }
 
 .teal {
-  --a-primary: #14b8a6;
-  --a-success: #84cc16;
-  --a-info: #06b6d4;
-  --a-warning: #f59e0b;
-  --a-danger: #f43f5e;
+  --a-primary: #14b8a6; /* colors.teal-500 */
+  --a-success: #84cc16; /* colors.lime-500 */
+  --a-info: #06b6d4; /* colors.cyan-500 */
+  --a-warning: #f59e0b; /* colors.amber-500 */
+  --a-danger: #f43f5e; /* colors.rose-500 */
 }
 
 /* https://www.tailwindcss.cn/docs/customizing-colors#-8 */
-
-

@@ -1,4 +1,4 @@
 .a-icon {
   @apply inline-block;
-  @apply w-5 h-5 mx-1;
+  @apply w-5 h-5;
 }

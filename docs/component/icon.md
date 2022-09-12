@@ -6,16 +6,16 @@
 pnpm install @vicons/ionicons5
 ```
 
-## 基础用法
+## 使用
 
-<a-icon color="#4f46e5"> <ArrowUpCircle /> </a-icon>
+<a-icon> <ArrowUpCircle /> </a-icon>
 <a-icon color="#22c55e"> <ArrowDownCircle /> </a-icon>
 <a-icon color="#f97316"> <ArrowBackCircle /> </a-icon>
 <a-icon color="#ef4444"> <ArrowForwardCircle /> </a-icon>
 
 ```vue
 <template>
-  <a-icon color="#4f46e5"> <ArrowUpCircle /> </a-icon>
+  <a-icon> <ArrowUpCircle /> </a-icon>
   <a-icon color="#22c55e"> <ArrowDownCircle /> </a-icon>
   <a-icon color="#f97316"> <ArrowBackCircle /> </a-icon>
   <a-icon color="#ef4444"> <ArrowForwardCircle /> </a-icon>
@@ -39,3 +39,24 @@ import {
 <script setup lang="ts">
 import { ArrowUpCircle, ArrowDownCircle,ArrowBackCircle,ArrowForwardCircle } from "@vicons/ionicons5";
 </script>
+
+## 内置图标
+
+组件库内置使用了[hero icons/solid](https://vue-hero-icons.netlify.app)图标，共 226 个图标
+
+### 使用
+
+```vue
+<template>
+  <XIcon />
+</template>
+<script setup lang="ts">
+import { XIcon } from 'atomu-icons';
+</script>
+```
+
+### 属性
+
+| 名称 | 类型   | 可选值 | 默认值 | 说明    |
+| ---- | ------ | ------ | ------ | ------- |
+| size | string | -      | 20     | 单位 px |

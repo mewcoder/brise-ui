@@ -4,14 +4,14 @@
       <slot>
         <p class="a-message__content">{{ message }}</p>
       </slot>
-      <AIconClose v-if="closable" class="a-message__close" @click="handleClose" /></div
+      <XIcon v-if="closable" class="a-message__close" @click="handleClose" /></div
   ></transition>
 </template>
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { messageProps } from './message';
-import { AIconClose } from '../../inner';
+import { XIcon } from 'atomu-icons';
 
 const props = defineProps(messageProps);
 
