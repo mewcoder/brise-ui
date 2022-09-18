@@ -1,15 +1,15 @@
 ---
 layout: home
 
-title: Atomu
+title: ATOMU
 titleTemplate: Vue3 Component Library
 
 hero:
-  name: Atomu
+  name: ATOMU
   text: Vue3 Component Library
   tagline: Powered by UnoCSS
   image:
-    src: /atom.svg
+    src: /logo.png
     alt: atomu
   actions:
     - theme: brand

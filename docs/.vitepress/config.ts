@@ -1,11 +1,11 @@
 export default {
-  title: 'Atomu',
+  title: 'ATOMU',
   description: 'Vue3 Component Library',
   appearance: false,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
-    logo: '/atom.svg',
-    siteTitle: 'Atomu',
+    logo: '/logo.png',
+    siteTitle: '',
     docsDir: 'docs',
     outlineTitle: '#',
     repo: 'https://github.com/mewcoder/atomu',
