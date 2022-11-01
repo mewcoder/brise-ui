@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="344px" src="https://s1.ax1x.com/2022/09/18/x9CXbd.png" />
+  <img width="344px" src="https://user-images.githubusercontent.com/26575685/199277758-7f7293ae-a1c7-47fe-a8bf-9bad6a36b350.png" />
 </p>
 
 <p align="center">A Vue 3 Component Library Powered by UnoCSS</p>
