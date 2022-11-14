@@ -12,10 +12,10 @@ importers:
       '@vitejs/plugin-vue-jsx': ^2.0.1
       '@vue-hero-icons/solid': ^1.7.2
       async-validator: ^4.2.5
-      atomu-icons: workspace:*
-      atomu-theme: workspace:*
-      atomu-utils: workspace:*
-      atomu-vue: workspace:*
+      brise-icons: workspace:*
+      brise-theme: workspace:*
+      brise-utils: workspace:*
+      brise-vue: workspace:*
       tiny-emitter: ^2.1.0
       typescript: ^4.8.2
       unocss: ^0.45.18
@@ -34,10 +34,10 @@ importers:
       '@vicons/ionicons5': 0.12.0
       '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.38
       '@vitejs/plugin-vue-jsx': 2.0.1_vite@3.1.0+vue@3.2.38
-      atomu-icons: link:packages/icons
-      atomu-theme: link:packages/theme
-      atomu-utils: link:packages/utils
-      atomu-vue: link:packages/components
+      brise-icons: link:packages/icons
+      brise-theme: link:packages/theme
+      brise-utils: link:packages/utils
+      brise-vue: link:packages/components
       typescript: 4.8.2
       unocss: 0.45.18_vite@3.1.0
       vite: 3.1.0

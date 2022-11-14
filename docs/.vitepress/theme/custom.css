@@ -7,8 +7,8 @@
   --vp-button-brand-hover-border: var(--a-primary);
   --vp-button-brand-active-border: var(--a-primary);
   --vp-home-hero-name-color: transparent;
-  /* --vp-home-hero-name-background: linear-gradient(90deg, var(--a-primary) 60%, #60a5fa); */
-  /* --vp-home-hero-image-background-image: linear-gradient(90deg, var(--a-primary) 60%, #fff); */
+  --vp-home-hero-name-background: linear-gradient(90deg, var(--a-primary) 60%, #60a5fa);
+  --vp-home-hero-image-background-image: linear-gradient(90deg, var(--a-primary) 60%, #fff);
   --vp-home-hero-image-filter: blur(120px);
 }
 .vp-doc h3 {
@@ -64,5 +64,9 @@
   /* width:100%; */
   /* margin-left: 50%; */
   /* transform: translate(-50%, 0);*/
-  height: 48px !important;
+  /* height: 48px !important; */
+}
+
+.image-container .VPImage {
+  width: 240px;
 }

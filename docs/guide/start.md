@@ -1,8 +1,8 @@
 # 快速开始
 
 ```ts
-import { installComponents } from "atomu-vue";
-import 'atomu-theme'
+import { installComponents } from "brise-vue";
+import 'brise-theme'
 const app = createApp(App);
 installComponents(app);
 ```
@@ -10,6 +10,6 @@ installComponents(app);
 # 安装
 
 ```bash
-npm i atomu-vue
-npm i atomu-theme
+npm i brise-vue
+npm i brise-theme
 ```

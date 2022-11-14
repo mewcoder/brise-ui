@@ -1,5 +1,5 @@
 import _Dialog from "./src/dialog.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Dialog = withInstall(_Dialog);
 

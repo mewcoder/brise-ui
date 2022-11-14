@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import { breadcrumbProps } from './breadcrumb';
-import { ArrowLeftIcon, ChevronRightIcon } from 'atomu-icons';
+import { ArrowLeftIcon, ChevronRightIcon } from 'brise-icons';
 
 const props = defineProps(breadcrumbProps);
 // const emit = defineEmits(['update:modelValue', 'change']);

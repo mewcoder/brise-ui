@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import { ref, inject, computed } from 'vue';
 import { collapseItemProps } from './types';
-import { ChevronDownIcon, ChevronRightIcon } from 'atomu-icons';
+import { ChevronDownIcon, ChevronRightIcon } from 'brise-icons';
 
 const props = defineProps(collapseItemProps);
 const emit = defineEmits(['update:modelValue', 'change']);

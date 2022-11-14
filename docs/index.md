@@ -1,23 +1,23 @@
 ---
 layout: home
 
-title: ATOMU
+title: BRISE-UI
 titleTemplate: Vue3 Component Library
 
 hero:
-  name: ATOMU
+  name: BRISE-UI
   text: Vue3 Component Library
   tagline: Powered by UnoCSS
   image:
-    src: /logo.png
-    alt: atomu
+    src: /logo.svg
+    alt: brise
   actions:
     - theme: brand
       text: 快速开始
       link: /guide/start
     - theme: alt
       text: View on GitHub
-      link: https://github.com/mewcoder/atomu
+      link: https://github.com/mewcoder/brise
 
 features:
   - icon: ⚡

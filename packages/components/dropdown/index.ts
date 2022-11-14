@@ -1,6 +1,6 @@
 import _Dropdown from "./src/dropdown.vue";
 import DropdownItem from "./src/dropdown-item.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Dropdown = withInstall(_Dropdown, { DropdownItem });
 

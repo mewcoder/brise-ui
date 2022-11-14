@@ -1,6 +1,6 @@
 import _Tabs from './src/tabs.vue';
 import _TabPane from './src/tab-pane.vue';
-import { withInstall, withNoopInstall } from 'atomu-utils';
+import { withInstall, withNoopInstall } from 'brise-utils';
 
 const Tabs = withInstall(_Tabs, {
   _TabPane

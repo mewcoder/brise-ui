@@ -1,5 +1,5 @@
 import _Table from "./src/rate.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Table = withInstall(_Table);
 

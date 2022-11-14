@@ -6,7 +6,7 @@
 
 ## 文档
 
-[atomu.vercel.app](https://atomu.vercel.app/)
+[brise.vercel.app](https://brise.vercel.app/)
 
 ## 安装
 

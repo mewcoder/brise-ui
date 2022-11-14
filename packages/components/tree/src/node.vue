@@ -23,7 +23,7 @@
 <script setup lang="ts">
 import { reactive } from 'vue';
 import { nodeProps } from './types';
-import { ChevronRightIcon, ChevronDownIcon } from 'atomu-icons';
+import { ChevronRightIcon, ChevronDownIcon } from 'brise-icons';
 
 const props = defineProps(nodeProps);
 

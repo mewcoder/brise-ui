@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { dialogProps } from './dialog';
-import { XIcon } from 'atomu-icons';
+import { XIcon } from 'brise-icons';
 
 defineProps(dialogProps);
 const emit = defineEmits(['update:modelValue']);

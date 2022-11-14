@@ -1,6 +1,6 @@
 export function defaultTheme() {
   return {
-    name: "atomu-vue/preset-default-theme",
+    name: "brise-vue/preset-default-theme",
     theme: {
       colors: {
         primary: "var(--a-primary)",

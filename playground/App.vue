@@ -2,7 +2,7 @@
 import { ref, reactive, watch } from 'vue';
 import { ArrowUpCircleSharp, AddCircle, Alarm, At } from '@vicons/ionicons5';
 
-const inputVal = ref('atomu vue');
+const inputVal = ref('brise vue');
 
 const rateVal = ref(2);
 
@@ -82,7 +82,7 @@ const changeTheme = (color: string) => {
 
 <template>
   <div class="flex items-center">
-    <h2>atomu-vue</h2>
+    <h2>brise-vue</h2>
     <span class="ml-4 text-sm">切换主题：</span>
     <a-radio-group v-model="radioValue" @change="changeTheme">
       <a-radio label="default">default</a-radio>

@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 import unocss from "unocss/vite";
 import { presetUno } from "unocss";
 import transformerDirective from "@unocss/transformer-directives";
-import { defaultTheme } from "atomu-theme/preset.mjs";
+import { defaultTheme } from "brise-theme/preset.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

@@ -51,7 +51,7 @@ import { ArrowUpCircle, ArrowDownCircle,ArrowBackCircle,ArrowForwardCircle } fro
   <XIcon />
 </template>
 <script setup lang="ts">
-import { XIcon } from 'atomu-icons';
+import { XIcon } from 'brise-icons';
 </script>
 ```
 

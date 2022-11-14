@@ -1,14 +1,14 @@
 export default {
-  title: 'ATOMU',
+  title: 'brise',
   description: 'Vue3 Component Library',
   appearance: false,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
-    logo: '/logo.png',
-    siteTitle: '',
+    logo: '/logo.svg',
+    siteTitle: 'BRISE-UI',
     docsDir: 'docs',
     outlineTitle: '#',
-    repo: 'https://github.com/mewcoder/atomu',
+    repo: 'https://github.com/mewcoder/brise',
     footer: {
       copyright: 'Copyright © 2022 mewcoder'
     },
@@ -73,6 +73,6 @@ export default {
         }
       ]
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/mewcoder/atomu' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/mewcoder/brise' }]
   }
 };

@@ -1,5 +1,5 @@
 import _Tree from "./src/tree.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Tree = withInstall(_Tree);
 

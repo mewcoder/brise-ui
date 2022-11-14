@@ -1,6 +1,6 @@
 import _Radio from './src/radio.vue';
 import _RadioGroup from './src/radio-group.vue';
-import { withInstall, withNoopInstall } from 'atomu-utils';
+import { withInstall, withNoopInstall } from 'brise-utils';
 
 const Radio = withInstall(_Radio, {
   _RadioGroup

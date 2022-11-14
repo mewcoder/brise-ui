@@ -1,5 +1,5 @@
 import _Button from './src/button.vue';
-import { withInstall } from 'atomu-utils';
+import { withInstall } from 'brise-utils';
 
 const Button = withInstall(_Button);
 

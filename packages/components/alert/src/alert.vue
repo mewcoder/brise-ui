@@ -22,7 +22,7 @@ import {
   CheckCircleIcon,
   ExclamationCircleIcon,
   XCircleIcon
-} from 'atomu-icons';
+} from 'brise-icons';
 
 const props = defineProps(alertProps);
 

@@ -1,6 +1,6 @@
 import _Checkbox from './src/checkbox.vue';
 import _CheckboxGroup from './src/checkbox-group.vue';
-import { withInstall, withNoopInstall } from 'atomu-utils';
+import { withInstall, withNoopInstall } from 'brise-utils';
 
 const Checkbox = withInstall(_Checkbox, {
   _CheckboxGroup

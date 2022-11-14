@@ -1,6 +1,6 @@
 import _Form from './src/form.vue';
 import _FormItem from './src/form-item.vue';
-import { withInstall, withNoopInstall } from 'atomu-utils';
+import { withInstall, withNoopInstall } from 'brise-utils';
 
 const Form = withInstall(_Form, {
   _FormItem

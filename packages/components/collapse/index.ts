@@ -1,6 +1,6 @@
 import _Collapse from "./src/collapse.vue";
 import CollapseItem from "./src/collapse-item.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Collapse = withInstall(_Collapse, { CollapseItem });
 

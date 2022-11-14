@@ -1,5 +1,5 @@
 import _Breadcrumb from "./src/breadcrumb.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Breadcrumb = withInstall(_Breadcrumb);
 

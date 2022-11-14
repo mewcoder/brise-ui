@@ -1,1 +1,1 @@
-declare module 'atomu-icons'
+declare module 'brise-icons'

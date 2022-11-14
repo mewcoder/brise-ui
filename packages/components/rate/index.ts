@@ -1,5 +1,5 @@
 import _Rate from "./src/rate.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Rate = withInstall(_Rate);
 

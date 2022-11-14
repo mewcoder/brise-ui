@@ -1,5 +1,5 @@
 import _Input from "./src/input.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Input = withInstall(_Input);
 

@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { messageProps } from './message';
-import { XIcon } from 'atomu-icons';
+import { XIcon } from 'brise-icons';
 
 const props = defineProps(messageProps);
 

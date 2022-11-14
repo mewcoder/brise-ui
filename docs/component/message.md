@@ -41,7 +41,7 @@
 | closable | boolean | true/false                     | true   | 关闭按钮 |
 
 <script lang="ts" setup>
-// import { Message } from 'atomu-vue'
+// import { Message } from 'brise-vue'
 // const handle = ()=>{
 //   Message({
 //       closable: true,

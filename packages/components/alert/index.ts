@@ -1,5 +1,5 @@
 import _Alert from "./src/alert.vue";
-import { withInstall } from "atomu-utils";
+import { withInstall } from "brise-utils";
 
 const Alert = withInstall(_Alert);
 
