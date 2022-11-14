@@ -1,24 +1,12 @@
 <p align="center">
-  <img width="444px" src="https://user-images.githubusercontent.com/26575685/199277758-7f7293ae-a1c7-47fe-a8bf-9bad6a36b350.png" />
+  <img width="200px" src="./logo.svg" />
 </p>
-
+<h1 align="center">BRISE-UI (WIP)</h1>
 <p align="center">A Vue 3 Component Library Powered by UnoCSS</p>
 
-## 文档
-
-[brise.vercel.app](https://brise.vercel.app/)
-
-## 安装
-
-```
-略
-```
-
-## 使用
-
-```vue
-略
-```
+<p align="center">
+<a href="https://onu.zyob.top/"> 🌟 在线文档 <sup>Beta</sup></a>
+</p>
 
 ## 特性
 
@@ -29,6 +17,15 @@
 - ✨ 使用 UnoCSS 原子化 CSS 方案
 
 - 🌈 支持定制 theme 主题在线切换
+
+
+## 使用
+
+```vue
+npm i brise-vue
+npm i brise-theme
+```
+
 
 ## License
 
