@@ -3,6 +3,7 @@ export default {
   description: 'Vue3 Component Library',
   appearance: false,
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  base: '/brise-ui/',
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: 'BRISE-UI',

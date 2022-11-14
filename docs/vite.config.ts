@@ -6,7 +6,6 @@ import { defaultTheme } from "brise-theme/preset.mjs";
 import vueJsx from "@vitejs/plugin-vue-jsx"; 
 export default defineConfig({
   root: "playground",
-  base: '/brise-ui/',
   plugins: [
     vueJsx(),
     unocss({
