@@ -22,8 +22,7 @@
 ## 使用
 
 ```vue
-npm i brise-vue
-npm i brise-theme
+npm i brise-ui
 ```
 
 
