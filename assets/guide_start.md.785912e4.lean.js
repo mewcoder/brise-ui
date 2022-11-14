@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,e as p}from"./app.fb0889f8.js";const F=JSON.parse('{"title":"\u5FEB\u901F\u5F00\u59CB","description":"","frontmatter":{},"headers":[],"relativePath":"guide/start.md"}'),e={name:"guide/start.md"},o=p("",4),l=[o];function t(c,r,i,D,y,d){return n(),a("div",null,l)}const C=s(e,[["render",t]]);export{F as __pageData,C as default};
