@@ -1,14 +1,12 @@
 <p align="center">
-  <img width="444px" src="./logo.svg" />
+  <img width="200px" src="./logo.svg" />
 </p>
 <h1 align="center">BRISE-UI (WIP)</h1>
 <p align="center">A Vue 3 Component Library Powered by UnoCSS</p>
 
-
-## 文档
-
-[atomu.vercel.app](https://atomu.vercel.app/)
-
+<p align="center">
+<a href="https://onu.zyob.top/"> 文档 <sup>Beta</sup></a>
+</p>
 
 ## 特性
 
