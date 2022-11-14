@@ -5,7 +5,7 @@
 <p align="center">A Vue 3 Component Library Powered by UnoCSS</p>
 
 <p align="center">
-<a href="https://onu.zyob.top/"> 在线文档 <sup>Beta</sup></a>
+<a href="https://onu.zyob.top/"> 🌟 在线文档 <sup>Beta</sup></a>
 </p>
 
 ## 特性
